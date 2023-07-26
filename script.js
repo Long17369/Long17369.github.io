@@ -16,6 +16,7 @@ function showWord(word){
 	for(var i in words){
 		Creat = document.createElement('word'+i);
 		Creat.append(words[i]+'\n');
-		Word.append(Creat)
+		Creat = document.createElement('div').append(Creat);
+		Word.append(Creat);
 	};
 }
