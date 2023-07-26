@@ -18,8 +18,11 @@
         "sec-fetch-site": "same-origin"
 
     },
-    "sign":[
+    "sign":{
+        "get_key_and_token":[
         "var",
         "params_AbusePreventionHelper",
-        "="]
+        "="],
+        "translate":"{'statusCode': 205, 'errorMessage': ''}"
+    }
 }
