@@ -1,5 +1,6 @@
 {
-	"word":["reputation",
+	"word": [
+		"reputation",
 		"dedication",
 		"occupation",
 		"inspect",
@@ -8,9 +9,10 @@
 		"deserve",
 		"explode",
 		"acquire",
-		"starvation"],
-	"name":"梁佳佳",
-	"Version":{
-		"time":"7.26"
+		"starvation"
+	],
+	"name": "梁佳佳",
+	"Version": {
+		"time": "7.26"
 	}
 }
