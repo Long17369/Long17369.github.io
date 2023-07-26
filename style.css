@@ -1,8 +1,14 @@
 .body{
-    background: white;
-    font-size: large;
+	background: white;
+	font-size: large;
 }
 .word{
-    color: black;
-    font-size: medium;
+	color: black;
+	font-size: medium;
+}
+.button_show{
+	border-radius: 86px;
+	background: linear-gradient(145deg, #966161, #b37474);
+	box-shadow:  34px 34px 45px #895959,
+				-34px -34px 45px #c57f7f;
 }
