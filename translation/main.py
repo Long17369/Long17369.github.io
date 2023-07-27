@@ -41,7 +41,7 @@ class Translate():
             return text
 
     class Complex():
-        """复杂翻译"""
+        """复杂翻译(近义词)"""
         def __init__(self) -> None:
             self.setting = setting.get('key')
             self.formdata = setting.get('formdata_1')
@@ -75,7 +75,7 @@ class Translate():
                     english.append(i["backTranslations"][j]["displayText"])
                 dict_complexTemp["English"] = english
                 dict_complex.append(dict_complexTemp)
-            file = './word/'+str(info)+'.json'
+            file = './word/synonym/'+str(info)+'.json'
             with open(file,'w',encoding='utf-8') as f:
                 json.dump(dict_complex,f,sort_keys=True,indent=True,ensure_ascii=False)
 
