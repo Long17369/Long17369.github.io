@@ -11,5 +11,5 @@ def tran(file):
             translate.complex(i)
 
 if __name__ == '__main__':
-    day = input('请输入日期')
+    day = './每日单词/'+input('请输入日期')+'.json'
     tran(day)
