@@ -4,7 +4,6 @@
     "header": {
         "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.115",
         "content-type": "application/x-www-form-urlencoded",
-
         "origin": "https://cn.bing.com",
         "sec-ch-ua-arch": "x86",
         "sec-ch-ua-bitness": "64",
@@ -12,17 +11,25 @@
         "sec-ch-ua-full-version-list": "Not_A Brand;v=99.0.0.0,Microsoft Edge;v=109.0.1518.115,Chromium;v=109.0.5414.149",
         "sec-ch-ua-platform": "Windows",
         "sec-ch-ua-platform-version": "0.1.0",
-
         "sec-fetch-dest": "empty",
         "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-origin"
-
     },
-    "sign":{
-        "get_key_and_token":[
-        "var",
-        "params_AbusePreventionHelper",
-        "="],
-        "translate":"{'statusCode': 205, 'errorMessage': ''}"
+    "formdata": {
+        "fromLang": "en",
+        "to": "zh-Hans",
+        "tryFetchingGenderDebiasedTranslations": "ture"
+    },
+    "sign": {
+        "get_key_and_token": [
+            "var",
+            "params_AbusePreventionHelper",
+            "="
+        ],
+        "translate": "{'statusCode': 205, 'errorMessage': ''}"
+    },
+    "key": {
+        "token": "",
+        "key": ""
     }
 }
