@@ -53,12 +53,12 @@ def read():
 def selection(date):
     with open('./words.txt','r',encoding='utf-8') as f:
         words = f.read().split('\n')
-    list = sort(randoms.orderlistInt(10,len(words)))
+    List = sort(randoms.orderlistInt(10,len(words)))
     word = []
-    for i in list:
+    for i in List:
         word.append(words[i])
     n=0
-    for i in list:
+    for i in List:
         words.pop(i-n)
         n += 1
     with open('./words.txt','w',encoding='utf-8') as f:
