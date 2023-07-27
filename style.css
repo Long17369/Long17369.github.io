@@ -13,55 +13,122 @@
 }
 
 .button_show {
-	border: none;
-	display: block;
 	position: relative;
-	padding: 0.7em 2.4em;
-	font-size: 18px;
-	background: transparent;
-	cursor: pointer;
-	user-select: none;
-	overflow: hidden;
-	color: royalblue;
-	z-index: 1;
-	font-family: inherit;
+	left: -6%;
+	background-color: #6558d3;
+	border-radius: 8px;
+	color: #fff;
 	font-weight: 500;
+	font-size: 1.125rem;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	width: 100%;
+	padding: 0.7em 0.25em;
+	text-decoration: none;
 }
 
-.button_show span {
+.wordCard {
+	border-radius: 16px;
+	box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+	padding: 10px;
+	background-color: #fff;
+	color: #697e91;
+	max-width: 300px;
+  }
+  
+  .wordCard strong {
+	font-weight: 600;
+	color: #425275;
+  }
+  
+  .wordCard .inner {
+	align-items: center;
+	padding: 40px;
+	padding-top: 50px;
+	background-color: #ecf0ff;
+	border-radius: 20px;
+	position: relative;
+  }
+  
+  .wordCard .pricing {
 	position: absolute;
-	left: 0;
 	top: 0;
+	right: 0;
+	background-color: #bed6fb;
+	border-radius: 99em 0 0 99em;
+	display: flex;
+	align-items: center;
+	padding: 0.625em 0.75em;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #425475;
+  }
+  
+  .wordCard .Word {
+	font-weight: 600;
+	font-size: 4rem;
+	color: #425675;
+  }
+  
+  .wordCard .Word+* {
+	margin-top: 0.75rem;
+  }
+  
+  .wordCard .posTag {
+	font-size: 1.25rem;
+	color: #425675;
+  }
+  
+  .wordCard .posTag+* {
+	margin-top: 1rem;
+  }
+  
+  .wordCard .action {
 	width: 100%;
-	height: 100%;
-	background: transparent;
-	z-index: -1;
-	border: 4px solid royalblue;
-}
-
-.button_show span::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 8%;
-	height: 500%;
-	background: var(--lightgray);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(-60deg);
-	transition: all 0.3s;
-}
-
-.button_show:hover span::before {
-	transform: translate(-50%, -50%) rotate(-90deg);
+	display: flex;
+	align-items: center;
+	justify-content: end;
+  }
+  
+  .wordCard .button1 {
+	position: relative;
+	left: -6%;
+	background-color: #6558d3;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.125rem;
+	text-align: center;
+	border: 0;
+	outline: 0;
 	width: 100%;
-	background: royalblue;
-}
-
-.button_show:hover {
-	color: white;
-}
-
-.button_show:active span::before {
-	background: #2751cd;
-}
+	padding: 0.7em 0.25em;
+	text-decoration: none;
+  }
+  
+  .wordCard .button1:hover,
+  .wordCard .button1:focus {
+	background-color: #4133B7;
+  }
+  
+  .wordCard .button2 {
+	position: relative;
+	left: 6%;
+	background-color: #6558d3;
+	border-radius: 6px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.125rem;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	width: 100%;
+	padding: 0.7em 0.25em;
+	text-decoration: none;
+  }
+  
+  .wordCard .button2:hover,
+  .wordCard .button2:focus {
+	background-color: #4133B7;
+  }
