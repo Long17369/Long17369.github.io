@@ -1,6 +1,6 @@
 function loadWord() {
 	var request = new XMLHttpRequest();
-	request.open('GET', './word/7.26.json');
+	request.open('GET', './每日单词/7.26.json');
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
