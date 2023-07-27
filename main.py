@@ -11,7 +11,7 @@ def synonym(file):
         for i in words['word']:
             translate.complex(i)
 
-def allWord(file):
+def allword(file):
     """导入单词表"""
     with open(file,'r',encoding='utf-8') as f:
         words = json.load(f)
@@ -50,5 +50,5 @@ def read():
 
 if __name__ == '__main__':
     # day = './每日单词/'+input('请输入日期')+'.json'
-    # allWord('word.json')
+    # allword('word.json')
     read()
