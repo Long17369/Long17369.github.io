@@ -68,7 +68,9 @@ class Translate():
             text = word[0]["translations"]
             dict_complex = []
             for i in text:
-                dict_complexTemp ={"词性":i['posTag'],}
+                with open('./dic.json','r',encoding='utf-8') as f:
+                    posTag = json.load(f)['posTag']
+                dict_complexTemp ={"词性":posTag[i['posTag']],}
                 dict_complexTemp["Chinese"] = i["displayTarget"]
                 english = []
                 for j in range(len(i["backTranslations"])):

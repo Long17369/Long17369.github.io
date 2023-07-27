@@ -1,6 +1,7 @@
 function loadWord() {
 	var request = new XMLHttpRequest();
-	request.open('GET', './每日单词/7.26.json');
+	var date = getDate()
+	request.open('GET', './每日单词/'+date+'.json');
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
@@ -21,3 +22,10 @@ function showWord(word) {
 		Word.append(Creat1);
 	};
 };
+function getDate(){
+	var date = new Date()
+	var strDate = date.getDate()
+	var nowMonth = date.getMonth()+1
+	var nowDate = nowMonth + '.' + strDate
+	return nowDate
+}
