@@ -1,4 +1,5 @@
 """单词处理"""
+import glob
 import json #读取json
 from translation.main import translate #翻译
 
@@ -36,7 +37,18 @@ def write(word,name):
         info["name"].append(name)
         json.dump(info,f,sort_keys=True,indent=True,ensure_ascii=False)
 
+def read():
+    """读取所有单词"""
+    file = glob.glob('./word/all/*.json')
+    word = []
+    for i in file:
+        word.append(i[11:-5])
+    with open('words.txt','w',encoding='utf-8') as f:
+        for i in word:
+            f.write(i)
+            f.write('\n')
 
 if __name__ == '__main__':
     # day = './每日单词/'+input('请输入日期')+'.json'
-    allWord('word.json')
+    # allWord('word.json')
+    read()
