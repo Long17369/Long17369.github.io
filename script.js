@@ -1,3 +1,8 @@
+let Show = class{
+	showword() {
+		
+	}
+}
 function loadWord() {
 	var request = new XMLHttpRequest();
 	var date = getDate()
@@ -6,7 +11,7 @@ function loadWord() {
 	request.send();
 	request.onload = function () {
 		var word = request.response;
-		showWord(word);
+		return word
 	};
 };
 function showWord(word) {
@@ -28,4 +33,10 @@ function getDate(){
 	var nowMonth = date.getMonth()+1
 	var nowDate = nowMonth + '.' + strDate
 	return nowDate
+}
+function showChinese(){
+	
+}
+function showword(){
+	showWord(loadWord())
 }
