@@ -33,7 +33,7 @@
    "params_AbusePreventionHelper",
    "="
   ],
-  "translate_c": "{'statusCode': 400, 'errorMessage': ''}",
+  "translate_c": "{'statusCode': 205, 'errorMessage': ''}",
   "translate_s": "{'statusCode': 205, 'errorMessage': ''}"
  },
  "urlcomplex": "https://cn.bing.com/tlookupv3?isVertical=1&&IG=0F4991243E674EF6867B5A24A7ECECE0&IID=translator.5023.7",
