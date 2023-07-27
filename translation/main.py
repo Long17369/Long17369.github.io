@@ -111,7 +111,7 @@ class Setting():
         self.get = self.getSetting
     def getSetting(self,settingB: str = 'setting'):
         """用于读取设置"""
-        with open('./setting.json', 'r', encoding='utf-8') as f:
+        with open('./translation/setting.json', 'r', encoding='utf-8') as f:
             settings = json.load(f)
         if settingB in settings:
             return settings[settingB]
@@ -125,7 +125,7 @@ class Setting():
             return None
         settings = self.getSetting()
         settings[settingB] = settingC
-        with open('./setting.json', 'w', encoding='utf-8') as f:
+        with open('./translation/setting.json', 'w', encoding='utf-8') as f:
             json.dump(settings,f,sort_keys=True,indent=True,ensure_ascii=False)
 
 setting = Setting()
