@@ -53,18 +53,20 @@ def selection():
     with open('./words.txt','r',encoding='utf-8') as f:
         words = f.read().split('\n')
     list = randoms.orderlistInt(10,len(words))
-    del words
     word = []
     for i in list:
         word.append(words[i])
+    del words
     date = input("请输入日期")
     words = {"word":word,"Version":{"time":date}}
     file = './每日单词/' + date + '.json'
-    with open(file,'r',encoding='utf-8') as f:
+    with open(file,'w',encoding='utf-8') as f:
         json.dump(words,f,sort_keys=True,indent=True,ensure_ascii=False)
 
 
 if __name__ == '__main__':
     # day = './每日单词/'+input('请输入日期')+'.json'
+    # synonym(day)
     # allword('word.json')
-    read()
+    # read()
+    selection()
