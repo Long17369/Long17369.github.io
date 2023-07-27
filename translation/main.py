@@ -8,8 +8,8 @@ import requests     # 用于请求网络
 class Translate():
     """翻译"""
     def __init__(self) -> None:
-        self.token = 'NTuUIMBqLrZQ98bEVlO33MSmXU6QiN5R'
-        self.key = '1690370670467'
+        self.simple = self.Simple().simple
+        self.complex = self.Complex().complex
 
     class Simple():
         """简单翻译"""
@@ -17,7 +17,7 @@ class Translate():
             self.setting = setting.get('key')
             self.formdata = setting.get('formdata')
             self.error = setting.get('sign')["translate"]
-            self.url = setting.get('url')
+            self.url = setting.get('urlsimple')
             self.header = setting.get('header')
             self.formdata.update(setting.get('key'))
         def reload(self,fun):
@@ -27,12 +27,17 @@ class Translate():
         def simple(self,info):
             """简单翻译"""
             self.formdata["text"] = info
-            word = requests.post(self.url, data=self.formdata, headers=self.header, timeout=10).json()
+            post = requests.post(self.url, data=self.formdata, headers=self.header, timeout=10)
+            word = post.json()
             if word == self.error:
                 # print('key, token已失效')
                 keyToken()
                 self.reload(self.simple)(info)
-            return word
+            return self.end(word)
+        def end(self,word):
+            """结束"""
+            text = word[0]["translations"]["text"]
+            return text
 
     class Complex():
         """复杂翻译"""
@@ -40,7 +45,7 @@ class Translate():
             self.setting = setting.get('key')
             self.formdata = setting.get('formdata')
             self.error = setting.get('sign')["translate"]
-            self.url = setting.get('url')
+            self.url = setting.get('urlcomplex')
             self.header = setting.get('header')
             self.formdata.update(setting.get('key'))
         def reload(self,fun):
@@ -50,12 +55,27 @@ class Translate():
         def complex(self,info):
             """复杂翻译"""
             self.formdata["text"] = info
-            word = requests.post(self.url, data=self.formdata, headers=self.header, timeout=10).json()
+            post = requests.post(self.url, data=self.formdata, headers=self.header, timeout=10)
+            word = post.json()
             if word == self.error:
                 # print('key, token已失效')
                 keyToken()
                 self.reload(self.complex)(info)
-            return word
+            return self.end(word,info)
+        def end(self,word,info):
+            """结束"""
+            text = word[0]["translation"]
+            dict_complex = {}
+            for i in range(text):
+                dict_complex["Chinese"] = i["displayTarget"]
+                english = []
+                for j in i["backTranslations"]:
+                    english.append(i["backTranslations"][j]["displayText"])
+                dict_complex["English"] = english
+            file = './word/word'+str(info)
+            with open(file,'w',encoding='utf-8') as f:
+                json.dump(dict_complex,f,sort_keys=True,indent=True)
+
 
 translate = Translate()
 
@@ -114,4 +134,3 @@ if __name__ == '__main__':
         trans = input('翻译内容：')
         words = translate.simple(trans)
         print(words, '\n')
-

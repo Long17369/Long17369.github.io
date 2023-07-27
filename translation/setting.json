@@ -1,5 +1,6 @@
 {
-    "url": "http://cn.bing.com/ttranslatev3?isVertical=1&&IG=5203357EA2EF4807ADCB196ED95F24D5&IID=translator.5026",
+    "urlsimple": "http://cn.bing.com/ttranslatev3?isVertical=1&&IG=5203357EA2EF4807ADCB196ED95F24D5&IID=translator.5026",
+    "urlcomplex":"https://cn.bing.com/tlookupv3?isVertical=1&&IG=0F4991243E674EF6867B5A24A7ECECE0&IID=translator.5023.7",
     "header": {
         "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.115",
         "content-type": "application/x-www-form-urlencoded",
