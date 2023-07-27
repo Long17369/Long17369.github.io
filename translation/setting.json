@@ -1,6 +1,5 @@
 {
-    "url1": "http://cn.bing.com/ttranslatev3?isVertical=1&&IG=",
-    "url3": "&IID=translator.5026",
+    "url": "http://cn.bing.com/ttranslatev3?isVertical=1&&IG=5203357EA2EF4807ADCB196ED95F24D5&IID=translator.5026",
     "header": {
         "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.115",
         "content-type": "application/x-www-form-urlencoded",

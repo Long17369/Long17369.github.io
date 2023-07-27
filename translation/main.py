@@ -15,29 +15,23 @@ class Translate():
         """简单翻译"""
         def __init__(self) -> None:
             self.setting = setting.get('key')
-            self.key,self.token = self.setting[0],self.setting[1]
-            self.sign = "{'statusCode': 205, 'errorMessage': ''}"
-            self.url1 = setting.get('url1')
-            self.url2 = '5203357EA2EF4807ADCB196ED95F24D5'
-            self.url3 = setting.get('url3')
-            self.url = self.url1+self.url2+self.url3
+            self.formdata = setting.get('formdata')
+            self.error = setting.get('sign')["translate"]
+            self.url = setting.get('url')
             self.header = setting.get('header')
-        def reload(self):
+            self.formdata.update(setting.get('key'))
+        def reload(self,fun):
             """重载key&token"""
-            self.key,self.token = self.setting[0],self.setting[1]
+            self.formdata.updata(setting.get('key'))
+            return fun
         def simple(self,info):
             """简单翻译"""
-            formdata = {
-                "fromLang": "en",
-                "text": info,
-                "to": "zh-Hans",
-                "token": self.token,
-                "key": self.key,
-                "tryFetchingGenderDebiasedTranslations": "ture"}
-            word = requests.post(self.url, data=formdata, headers=self.header, timeout=10).json()
-            if word == self.sign:
-                print('key, token已失效')
-
+            self.formdata["text"] = info
+            word = requests.post(self.url, data=self.formdata, headers=self.header, timeout=10).json()
+            if word == self.error:
+                # print('key, token已失效')
+                keyToken()
+                self.reload(self.simple)(info)
             return word
 
     class Complex():
@@ -45,23 +39,22 @@ class Translate():
         def __init__(self) -> None:
             self.setting = setting.get('key')
             self.formdata = setting.get('formdata')
-            self.key,self.token = self.setting[0],self.setting[1]
-            self.error = setting.get('url1')["translate"]
-            self.url1 = setting.get('url1')
-            self.url2 = '5203357EA2EF4807ADCB196ED95F24D5'
-            self.url3 = setting.get('url3')
-            self.url = self.url1+self.url2+self.url3
+            self.error = setting.get('sign')["translate"]
+            self.url = setting.get('url')
             self.header = setting.get('header')
-        def reload(self):
+            self.formdata.update(setting.get('key'))
+        def reload(self,fun):
             """重载key&token"""
-            self.key,self.token = self.setting[0],self.setting[1]
+            self.formdata.updata(setting.get('key'))
+            return fun
         def complex(self,info):
             """复杂翻译"""
             self.formdata["text"] = info
             word = requests.post(self.url, data=self.formdata, headers=self.header, timeout=10).json()
             if word == self.error:
-                print('key, token已失效')
-                
+                # print('key, token已失效')
+                keyToken()
+                self.reload(self.complex)(info)
             return word
 
 translate = Translate()
@@ -84,10 +77,8 @@ def get_key_and_token():
                 text3 = text2[3][1:-1].split(',')
                 print(text3)
                 break
-    key = text3[0]
-    token = text3[1]
-    setting.set()
-    return key, token
+    key = {"key":text3[0],"token":text3[1]}
+    setting.set("key",key)
 keyToken = get_key_and_token
 
 class Setting():
@@ -105,7 +96,7 @@ class Setting():
             return settings
         print('Setting Not Found')
         return None
-    def setSetting(self,settingB = None,settingC:str = None):
+    def setSetting(self,settingB = None,settingC = None):
         """用于写入设置"""
         if settingB is None or settingC is None:
             return None
@@ -123,3 +114,4 @@ if __name__ == '__main__':
         trans = input('翻译内容：')
         words = translate.simple(trans)
         print(words, '\n')
+
