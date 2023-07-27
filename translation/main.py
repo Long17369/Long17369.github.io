@@ -66,13 +66,15 @@ class Translate():
         def end(self,word,info):
             """结束"""
             text = word[0]["translations"]
-            dict_complex = {}
+            dict_complex = []
             for i in text:
-                dict_complex["Chinese"] = i["displayTarget"]
+                dict_complexTemp ={}
+                dict_complexTemp["Chinese"] = i["displayTarget"]
                 english = []
                 for j in range(len(i["backTranslations"])):
                     english.append(i["backTranslations"][j]["displayText"])
-                dict_complex["English"] = english
+                dict_complexTemp["English"] = english
+                dict_complex.append(dict_complexTemp)
             file = './word/'+str(info)+'.json'
             with open(file,'w',encoding='utf-8') as f:
                 json.dump(dict_complex,f,sort_keys=True,indent=True,ensure_ascii=False)
