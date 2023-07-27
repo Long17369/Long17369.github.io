@@ -6,6 +6,10 @@
    "prestige",
    "fame",
    "reputational"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -16,6 +20,10 @@
    "prestige",
    "standing",
    "reputable"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -25,6 +33,10 @@
    "fame",
    "renown",
    "rep"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -34,6 +46,10 @@
    "rap",
    "wom",
    "buzz"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -46,12 +62,20 @@
    "honour",
    "emeritus",
    "reputational"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
   "Chinese": "美誉",
   "English": [
    "reputation"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -64,6 +88,10 @@
    "prestigious",
    "cachet",
    "prominence"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -72,6 +100,10 @@
    "reputation",
    "Yu",
    "Fitch"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -80,6 +112,10 @@
    "reputation",
    "prestigious",
    "renowned"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -92,6 +128,10 @@
    "profile",
    "fame",
    "renown"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  }
 ]

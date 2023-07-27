@@ -1,0 +1,60 @@
+[
+ {
+  "Chinese": "目前",
+  "English": [
+   "current",
+   "currently",
+   "now",
+   "present",
+   "presently",
+   "moment",
+   "so far"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "当前",
+  "English": [
+   "current",
+   "present",
+   "currently",
+   "nowadays"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "现时",
+  "English": [
+   "existing",
+   "current",
+   "present",
+   "currently",
+   "presently"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "现有",
+  "English": [
+   "existing",
+   "current",
+   "available",
+   "present",
+   "currently",
+   "prior"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ }
+]

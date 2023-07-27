@@ -1,0 +1,47 @@
+[
+ {
+  "Chinese": "人工",
+  "English": [
+   "artificial",
+   "manual",
+   "human",
+   "intraocular",
+   "constructed",
+   "labor",
+   "artificially",
+   "prosthetic"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "人造",
+  "English": [
+   "artificial",
+   "synthetic",
+   "faux",
+   "manmade",
+   "manufactured"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "人为",
+  "English": [
+   "human",
+   "artificial",
+   "artificially",
+   "anthropogenic",
+   "manmade"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

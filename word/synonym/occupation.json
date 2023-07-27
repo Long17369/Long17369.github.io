@@ -9,6 +9,10 @@
    "profession",
    "job",
    "vocation"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -21,6 +25,10 @@
    "conquered",
    "overrun",
    "took possession"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -30,6 +38,10 @@
    "occupation",
    "footprint",
    "consume"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -37,6 +49,10 @@
   "English": [
    "in",
    "occupation"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  },
  {
@@ -49,6 +65,10 @@
    "appropriation",
    "encroachment",
    "usurped"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  }
 ]

@@ -1,0 +1,51 @@
+[
+ {
+  "Chinese": "实验",
+  "English": [
+   "experiment",
+   "experimental",
+   "test",
+   "laboratory",
+   "lab",
+   "tests",
+   "trials"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "试验",
+  "English": [
+   "test",
+   "experimental",
+   "experiment",
+   "testing",
+   "trial",
+   "tests",
+   "Standard Test"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "尝试",
+  "English": [
+   "try",
+   "attempt",
+   "tried",
+   "trying",
+   "attempted",
+   "trial",
+   "experiment",
+   "experimented"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

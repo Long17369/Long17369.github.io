@@ -1,0 +1,131 @@
+[
+ {
+  "Chinese": "投票",
+  "English": [
+   "vote",
+   "voting",
+   "polling",
+   "voted",
+   "votes",
+   "ballot",
+   "turnout"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "表决",
+  "English": [
+   "vote",
+   "voting",
+   "votes",
+   "voted"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "选票",
+  "English": [
+   "votes",
+   "vote",
+   "ballot",
+   "polls",
+   "voting",
+   "votes cast"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "投",
+  "English": [
+   "cast",
+   "vote",
+   "voted",
+   "throw",
+   "dropped",
+   "invested",
+   "pitched",
+   "projection"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "票",
+  "English": [
+   "ticket",
+   "votes",
+   "vote",
+   "ballot"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "投票权",
+  "English": [
+   "voting rights",
+   "vote",
+   "votes",
+   "suffrage"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "投票表决",
+  "English": [
+   "vote",
+   "voted",
+   "voting",
+   "ballot"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "选举权",
+  "English": [
+   "vote",
+   "suffrage",
+   "voting rights",
+   "ballot"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "选举",
+  "English": [
+   "election",
+   "electoral",
+   "elected",
+   "vote",
+   "returning",
+   "voting",
+   "polls"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

@@ -10,6 +10,10 @@
    "compute",
    "count",
    "terms"
+  ],
+  "词性": [
+   "v.",
+   "动词"
   ]
  },
  {
@@ -18,6 +22,10 @@
    "count",
    "calculate",
    "considered"
+  ],
+  "词性": [
+   "v.",
+   "动词"
   ]
  },
  {
@@ -30,6 +38,10 @@
    "estimating",
    "calculate",
    "reckoning"
+  ],
+  "词性": [
+   "v.",
+   "动词"
   ]
  },
  {
@@ -37,6 +49,10 @@
   "English": [
    "forget",
    "calculate"
+  ],
+  "词性": [
+   "n.",
+   "名词"
   ]
  }
 ]
