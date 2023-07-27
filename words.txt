@@ -1,7 +1,6 @@
 accent
 demonstration
 contractor
-swap
 vet
 accurate
 territory
@@ -43,7 +42,6 @@ scale
 liberty
 motto
 prohibit
-conscious
 troop
 immoral
 restrict
@@ -92,7 +90,6 @@ run-down
 insult
 debate
 considerable
-enhance
 relevance
 relic
 straightforward
@@ -166,7 +163,6 @@ stubbom
 overstate
 imaginary
 stimulate
-therapy
 vigorous
 diligent
 pointless
@@ -191,7 +187,6 @@ version
 sentence
 mixture
 glorious
-brief
 complacent
 schedule
 consult with
@@ -207,7 +202,6 @@ starve
 emphasize
 genuinely
 acquire
-vote
 festival
 oppose
 withdraw
@@ -223,7 +217,6 @@ keen
 reunited
 melodious
 temporary
-curtain
 sensitive
 flavour
 inspect
@@ -231,7 +224,6 @@ purchase
 inaccurate
 intelligence
 bargain
-trail
 unlversal
 painful
 dedication
@@ -251,7 +243,6 @@ disguise
 gesture
 pause
 luxurious
-agile
 universal
 strike
 prospect
@@ -259,7 +250,6 @@ greedy
 conventional
 removal
 ignore
-essay
 dawn
 tough
 currently

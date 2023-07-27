@@ -3,6 +3,7 @@ import glob
 import json #读取json
 from translation.main import translate #翻译
 from pythonKu.randomtuple import randoms
+from pythonKu.sort import bubble as sort
 
 
 def synonym(file):
@@ -49,15 +50,22 @@ def read():
             f.write(i)
             f.write('\n')
 
-def selection():
+def selection(date):
     with open('./words.txt','r',encoding='utf-8') as f:
         words = f.read().split('\n')
-    list = randoms.orderlistInt(10,len(words))
+    list = sort(randoms.orderlistInt(10,len(words)))
     word = []
     for i in list:
         word.append(words[i])
+    n=0
+    for i in list:
+        words.pop(i-n)
+        n += 1
+    with open('./words.txt','w',encoding='utf-8') as f:
+        for i in words[0:-1]:
+            f.write(i+'\n')
+        f.write(words[-1])
     del words
-    date = input("请输入日期")
     words = {"word":word,"Version":{"time":date}}
     file = './每日单词/' + date + '.json'
     with open(file,'w',encoding='utf-8') as f:
@@ -69,4 +77,4 @@ if __name__ == '__main__':
     # synonym(day)
     # allword('word.json')
     # read()
-    selection()
+    selection(date = input("请输入日期"))
