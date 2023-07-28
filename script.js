@@ -1,10 +1,10 @@
-let Show = class{
-	showword(who = 'main') {
+function Show(){
+	function showword(who = 'main') {
 		wordCard.style.display = 'inline'
 		word = loadWord()
-		this.show(who)
+		show(who)
 	}
-	show(who){
+	function show(who){
 		return
 	}
 }
