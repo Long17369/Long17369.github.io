@@ -1,6 +1,6 @@
 function showword(who = 'main') {
 	wordCard.style.display = '';
-	word = loadWord();
+	var word = loadWord();
 	return show(who, word);
 }
 function show(who, word) {
@@ -9,11 +9,23 @@ function show(who, word) {
 	var words = word.word;
 	Word.innerHTML = '';
 }
+function showWord(word, count) {
 
-function loadWord() {
+}
+
+function loadWord(who) {
 	var request = new XMLHttpRequest();
-	var date = getDate()
-	request.open('GET', './每日单词/' + date + '.json');
+	if (who == 'main') {
+		var date = getDate()
+		var open = './每日单词/' + date + '.json'
+	}
+	if (who == 'history'){
+		return history()
+	}
+	if (who == 'all'){
+		return all()
+	}
+	request.open('GET',open);
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
@@ -21,19 +33,19 @@ function loadWord() {
 		return word
 	};
 };
-function showWord(word) {
-	var Word = document.getElementById('word');
-	var Creat;
-	var words = word.word;
-	Word.innerHTML = '';
-	for (var i in words) {
-		Creat = document.createElement('word' + i);
-		Creat.append(words[i] + '\n');
-		var Creat1 = document.createElement('div');
-		Creat1.append(Creat);
-		Word.append(Creat1);
-	};
-};
+// function showWord(word) {
+// 	var Word = document.getElementById('word');
+// 	var Creat;
+// 	var words = word.word;
+// 	Word.innerHTML = '';
+// 	for (var i in words) {
+// 		Creat = document.createElement('word' + i);
+// 		Creat.append(words[i] + '\n');
+// 		var Creat1 = document.createElement('div');
+// 		Creat1.append(Creat);
+// 		Word.append(Creat1);
+// 	};
+// };
 function getDate() {
 	var date = new Date()
 	var strDate = date.getDate()
