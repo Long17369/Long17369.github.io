@@ -1,5 +1,6 @@
 let Show = class{
-	showword() {
+	showword(who = 'main') {
+		wordCard.style.display = 'inline'
 		
 	}
 }
