@@ -6,29 +6,31 @@
 	background-image: linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
 	background-size: 20px 20px;
 }
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #7ef6ff;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #7ef6ff;
 }
 
 li {
-    float: left;
+	float: left;
 }
 
 li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+	display: block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+	background-color: #111;
 }
+
 .word {
 	color: black;
 	font-size: medium;
@@ -57,23 +59,23 @@ li a:hover {
 	background-color: #fff;
 	color: #697e91;
 	max-width: 300px;
-  }
-  
-  .wordCard strong {
+}
+
+.wordCard strong {
 	font-weight: 600;
 	color: #425275;
-  }
-  
-  .wordCard .inner {
+}
+
+.wordCard .inner {
 	align-items: center;
 	padding: 40px;
 	padding-top: 50px;
 	background-color: #ecf0ff;
 	border-radius: 20px;
 	position: relative;
-  }
-  
-  .wordCard .pricing {
+}
+
+.wordCard .pricing {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -85,35 +87,35 @@ li a:hover {
 	font-size: 1.25rem;
 	font-weight: 600;
 	color: #425475;
-  }
-  
-  .wordCard .Word {
+}
+
+.wordCard .Word {
 	font-weight: 600;
 	font-size: 4rem;
 	color: #425675;
-  }
-  
-  .wordCard .Word+* {
+}
+
+.wordCard .Word+* {
 	margin-top: 0.75rem;
-  }
-  
-  .wordCard .posTag {
+}
+
+.wordCard .posTag {
 	font-size: 1.25rem;
 	color: #425675;
-  }
-  
-  .wordCard .posTag+* {
+}
+
+.wordCard .posTag+* {
 	margin-top: 1rem;
-  }
-  
-  .wordCard .action {
+}
+
+.wordCard .action {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: end;
-  }
-  
-  .wordCard .button1 {
+}
+
+.wordCard .button1 {
 	position: relative;
 	left: -6%;
 	background-color: #6558d3;
@@ -127,14 +129,14 @@ li a:hover {
 	width: 100%;
 	padding: 0.7em 0.25em;
 	text-decoration: none;
-  }
-  
-  .wordCard .button1:hover,
-  .wordCard .button1:focus {
+}
+
+.wordCard .button1:hover,
+.wordCard .button1:focus {
 	background-color: #4133B7;
-  }
-  
-  .wordCard .button2 {
+}
+
+.wordCard .button2 {
 	position: relative;
 	left: 6%;
 	background-color: #6558d3;
@@ -148,9 +150,9 @@ li a:hover {
 	width: 100%;
 	padding: 0.7em 0.25em;
 	text-decoration: none;
-  }
-  
-  .wordCard .button2:hover,
-  .wordCard .button2:focus {
+}
+
+.wordCard .button2:hover,
+.wordCard .button2:focus {
 	background-color: #4133B7;
-  }
+}
