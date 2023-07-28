@@ -1,17 +1,18 @@
-function Show(){
+function Show() {
 	function showword(who = 'main') {
-		wordCard.style.display = 'inline'
+		wordCard.style.display = ''
 		word = loadWord()
-		show(who)
+		return show(who)
 	}
-	function show(who){
+	function show(who) {
 		return
 	}
 }
+
 function loadWord() {
 	var request = new XMLHttpRequest();
 	var date = getDate()
-	request.open('GET', './每日单词/'+date+'.json');
+	request.open('GET', './每日单词/' + date + '.json');
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
@@ -32,16 +33,16 @@ function showWord(word) {
 		Word.append(Creat1);
 	};
 };
-function getDate(){
+function getDate() {
 	var date = new Date()
 	var strDate = date.getDate()
-	var nowMonth = date.getMonth()+1
+	var nowMonth = date.getMonth() + 1
 	var nowDate = nowMonth + '.' + strDate
 	return nowDate
 }
-function showChinese(){
-	
+function showChinese() {
+
 }
-function showword(){
+function showword() {
 	showWord(loadWord())
 }
