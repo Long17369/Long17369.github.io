@@ -1,12 +1,13 @@
-function Show() {
-	function showword(who = 'main') {
-		wordCard.style.display = ''
-		word = loadWord()
-		return show(who)
-	}
-	function show(who) {
-		return
-	}
+function showword(who = 'main') {
+	wordCard.style.display = '';
+	word = loadWord();
+	return show(who, word);
+}
+function show(who, word) {
+	var Word = document.getElementById('Word');
+	var Creat;
+	var words = word.word;
+	Word.innerHTML = '';
 }
 
 function loadWord() {
@@ -24,7 +25,7 @@ function showWord(word) {
 	var Word = document.getElementById('word');
 	var Creat;
 	var words = word.word;
-	Word.innerHTML = ''
+	Word.innerHTML = '';
 	for (var i in words) {
 		Creat = document.createElement('word' + i);
 		Creat.append(words[i] + '\n');
