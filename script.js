@@ -1,6 +1,6 @@
 function showword(who = 'main') {
 	wordCard.style.display = '';
-	var word = loadWord();
+	var word = loadWord(who);
 	return show(who, word);
 }
 function show(who, word) {
