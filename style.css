@@ -1,5 +1,5 @@
-/* Version : 1.0.1.0 */
-/* Date : 2023/07/29 11.11 */
+/* Version : 1.0.1.01 */
+/* Date : 2023/07/29 11.37 */
 /* Author : Long17369 */
 .body {
 	background: white;
@@ -130,12 +130,12 @@ li a:hover {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: center;
 }
 
 .wordCard .button1 {
-	position: relative;
-	left: -16%;
+	/* position: relative;
+	left: -16%; */
 	background-color: #6558d3;
 	border-radius: 8px;
 	color: #fff;
@@ -155,8 +155,8 @@ li a:hover {
 }
 
 .wordCard .button2 {
-	position: relative;
-	left: -6%;
+	/* position: relative;
+	left: -6%; */
 	background-color: #6558d3;
 	border-radius: 6px;
 	color: #fff;
