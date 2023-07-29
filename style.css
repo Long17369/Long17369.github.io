@@ -61,12 +61,14 @@ li a:hover {
 }
 
 .wordCard {
+	position: relative;
+	left: 5%;
 	border-radius: 16px;
 	box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
 	padding: 10px;
 	background-color: #fff;
 	color: #697e91;
-	max-width: 300px;
+	max-width: 80%;
 }
 
 .wordCard strong {
@@ -108,7 +110,7 @@ li a:hover {
 }
 
 .wordCard .posTag {
-	font-size: 1.25rem;
+	font-size: 200%;
 	color: #425675;
 }
 
@@ -125,7 +127,7 @@ li a:hover {
 
 .wordCard .button1 {
 	position: relative;
-	left: -6%;
+	left: -16%;
 	background-color: #6558d3;
 	border-radius: 8px;
 	color: #fff;
@@ -134,7 +136,7 @@ li a:hover {
 	text-align: center;
 	border: 0;
 	outline: 0;
-	width: 100%;
+	width: 40%;
 	padding: 0.7em 0.25em;
 	text-decoration: none;
 }
@@ -146,7 +148,7 @@ li a:hover {
 
 .wordCard .button2 {
 	position: relative;
-	left: 6%;
+	left: -6%;
 	background-color: #6558d3;
 	border-radius: 6px;
 	color: #fff;
@@ -155,7 +157,7 @@ li a:hover {
 	text-align: center;
 	border: 0;
 	outline: 0;
-	width: 100%;
+	width: 40%;
 	padding: 0.7em 0.25em;
 	text-decoration: none;
 }
