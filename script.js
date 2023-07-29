@@ -47,7 +47,6 @@ function sleep(who){
 	if (wordL){
 		loadWord(who)
 	}
-	while (word == undefined) {};
 }
 function loadWord(who) {
 	if (who == 'main') {
