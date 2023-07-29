@@ -1,5 +1,5 @@
-/* Version : 1.0.1.02 */
-/* Date : 2023/07/29 12:34 */
+/* Version : 1.0.1.03 */
+/* Date : 2023/07/29 13:05 */
 /* Author : Long17369 */
 .body {
 	background: white;
@@ -17,7 +17,7 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-    top: 0.2rem;
+	top: 0.2rem;
 }
 
 ul {
@@ -63,7 +63,8 @@ li a:hover {
 	text-align: center;
 	border: 0;
 	outline: 0;
-	width: 100%;
+	/* width: 100%; */
+	min-width: 4rem;
 	padding: 0.7em 0.25em;
 	text-decoration: none;
 }
@@ -107,7 +108,7 @@ li a:hover {
 	display: flex;
 	align-items: center;
 	padding: 0.625em 0.75em;
-	/* font-size: 1.25rem; */
+	font-size: 0.25rem;
 	font-weight: 600;
 	color: #425475;
 }
@@ -123,7 +124,7 @@ li a:hover {
 }
 
 .wordCard .posTag {
-	font-size: 200%;
+	font-size: 0.3rem;
 	color: #425675;
 }
 
