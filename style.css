@@ -1,5 +1,5 @@
-/* Version : 1.0.1.01 */
-/* Date : 2023/07/29 11.47 */
+/* Version : 1.0.1.02 */
+/* Date : 2023/07/29 12:34 */
 /* Author : Long17369 */
 .body {
 	background: white;
@@ -12,10 +12,12 @@
 
 .main {
 	font-size: 100%;
-	height: 200px;
+	/* height: 200px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+    top: 0.2rem;
 }
 
 ul {
@@ -24,6 +26,8 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: #7ef6ff;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 li {
@@ -35,7 +39,7 @@ li a {
 	color: rgb(255, 255, 255);
 	text-align: center;
 	padding: 14px 16px;
-	font-size: 200%;
+	font-size: 0.375rem;
 	text-decoration: none;
 }
 
@@ -50,11 +54,12 @@ li a:hover {
 
 .button_show {
 	position: relative;
+	top: 0.9rem;
 	background-color: #6558d3;
 	border-radius: 10px;
 	color: #fff;
 	font-weight: 500;
-	font-size: 200%;
+	font-size: 0.4rem;
 	text-align: center;
 	border: 0;
 	outline: 0;
@@ -102,14 +107,14 @@ li a:hover {
 	display: flex;
 	align-items: center;
 	padding: 0.625em 0.75em;
-	font-size: 1.25rem;
+	/* font-size: 1.25rem; */
 	font-weight: 600;
 	color: #425475;
 }
 
 .wordCard .Word {
 	font-weight: 600;
-	font-size: 4rem;
+	font-size: 1.5rem;
 	color: #425675;
 }
 
@@ -140,7 +145,7 @@ li a:hover {
 	border-radius: 8px;
 	color: #fff;
 	font-weight: 500;
-	font-size: 1.125rem;
+	font-size: 0.4rem;
 	text-align: center;
 	border: 0;
 	outline: 0;
@@ -161,7 +166,7 @@ li a:hover {
 	border-radius: 6px;
 	color: #fff;
 	font-weight: 500;
-	font-size: 1.125rem;
+	font-size: 0.4rem;
 	text-align: center;
 	border: 0;
 	outline: 0;
