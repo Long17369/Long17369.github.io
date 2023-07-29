@@ -28,7 +28,7 @@ function Next(info,who){
 	next(count,who,info)
 }
 function next(count,who,info){
-	word = sleep(who)
+	sleep(who)
 	if (info == 'reset'){
 		var SetCount = document.getElementById('Count')
 		SetCount.innerText = (length(word.word) + 1)
@@ -75,9 +75,8 @@ function loadWord(who) {
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
-		var word = request.response;
+		word = request.response;
 		console.log('main载入成功')
-		return word
 	};
 };
 // function showWord(word) {
