@@ -1,16 +1,19 @@
 // Version : 1.0.1.03
-// Date : 2023/07/29 19:48
+// Date : 2023/07/29 20:09
 // Author : Long17369
-function showword(who = 'main') {
+var word
+var wordL = true
+function showword(who) {
 	action2.style.display = 'none'
 	wordCard.style.display = '';
-	console.log('载入单词'+who)
-	var word = loadWord(who);
+	console.log('载入单词'+who);
+	sleep(who);
 	return show(who, word);
 }
-function show(who, word) {
+function show(who) {
 	var Word = document.getElementById('Word');
 	var Creat;
+	sleep(who)
 	var words = word.word;
 	Word.innerHTML = '';
 }
@@ -25,9 +28,7 @@ function Next(info,who){
 	next(count,who,info)
 }
 function next(count,who,info){
-	if (word = undefined){
-		word = loadWord(who)
-	}
+	word = sleep(who)
 	if (info == 'reset'){
 		var SetCount = document.getElementById('Count')
 		SetCount.innerText = (length(word.word) + 1)
@@ -39,10 +40,15 @@ function next(count,who,info){
 	var SetWord = document.getElementById('word')
 	SetWord.innerText = word.word[count]
 }
-function showWord(word, count) {
+function showWord(count) {
 
 }
-
+function sleep(who){
+	if (wordL){
+		loadWord(who)
+	}
+	while (word = undefined) {};
+}
 function loadWord(who) {
 	if (who == 'main') {
 		var date = getDate()
@@ -63,6 +69,7 @@ function loadWord(who) {
 			}
 		}
 	}
+	wordL = false
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
