@@ -17,6 +17,7 @@ function loadWord(who) {
 	if (who == 'main') {
 		var date = getDate()
 		var open = './每日单词/' + date + '.json'
+		console.log('main载入成功')
 	}
 	else {
 		if (who == 'history') {
@@ -27,6 +28,7 @@ function loadWord(who) {
 				return all()
 			}
 			else {
+				console.log('载入失败')
 				return
 			}
 		}
