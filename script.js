@@ -1,4 +1,4 @@
-// Version : 1.0.1.03
+// Version : 1.0.1.04
 // Date : 2023/07/29 20:09
 // Author : Long17369
 var word
