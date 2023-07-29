@@ -14,21 +14,25 @@ function showWord(word, count) {
 }
 
 function loadWord(who) {
-	var request = new XMLHttpRequest();
 	if (who == 'main') {
 		var date = getDate()
 		var open = './每日单词/' + date + '.json'
 	}
-	if (who == 'history'){
-		return history()
+	else {
+		if (who == 'history') {
+			return history()
+		}
+		else {
+			if (who == 'all') {
+				return all()
+			}
+			else {
+				return
+			}
+		}
 	}
-	if (who == 'all'){
-		return all()
-	}
-	else{
-		return
-	}
-	request.open('GET',open);
+	var request = new XMLHttpRequest();
+	request.open('GET', open);
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
