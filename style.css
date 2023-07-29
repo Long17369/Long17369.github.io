@@ -1,5 +1,5 @@
-/* Version : 1.0.1.04 */
-/* Date : 2023/07/29 19:38 */
+/* Version : 1.0.1.05 */
+/* Date : 2023/07/29 20:54 */
 /* Author : Long17369 */
 .body {
 	background: white;
@@ -179,4 +179,10 @@ li a:hover {
 .wordCard .button2:hover,
 .wordCard .button2:focus {
 	background-color: #4133B7;
+}
+.about{
+	font-size: 0.3rem;
+}
+.about h1{
+	font-size: 0.7rem;
 }
