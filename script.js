@@ -14,6 +14,23 @@ function show(who, word) {
 	var words = word.word;
 	Word.innerHTML = '';
 }
+function Next(info,who){
+	var count
+	if (info == "reset"){
+		count = 0
+	}
+	if (info == 'next'){
+		count += 1
+	}
+	next(count,who)
+}
+function next(count,who){
+	if (word = undefined){
+		word = loadWord(who)
+	}
+	var SetWord = document.getElementById('word')
+	SetWord.innerText()
+}
 function showWord(word, count) {
 
 }
@@ -22,7 +39,7 @@ function loadWord(who) {
 	if (who == 'main') {
 		var date = getDate()
 		var open = './每日单词/' + date + '.json'
-		console.log('main载入成功')
+		console.log('main载入中')
 	}
 	else {
 		if (who == 'history') {
@@ -44,6 +61,7 @@ function loadWord(who) {
 	request.send();
 	request.onload = function () {
 		var word = request.response;
+		console.log('main载入成功')
 		return word
 	};
 };
