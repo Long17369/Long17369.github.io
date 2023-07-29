@@ -25,6 +25,9 @@ function loadWord(who) {
 	if (who == 'all'){
 		return all()
 	}
+	else{
+		return
+	}
 	request.open('GET',open);
 	request.responseType = 'json';
 	request.send();
