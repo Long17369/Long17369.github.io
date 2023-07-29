@@ -1,5 +1,5 @@
-// Version : 1.0.1.0
-// Date : 2023/07/29 11:14
+// Version : 1.0.1.01
+// Date : 2023/07/29 12:05
 // Author : Long17369
 function showword(who = 'main') {
 	action2.style.display = 'none'
