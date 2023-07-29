@@ -1,5 +1,5 @@
-// Version : 1.0.1.02
-// Date : 2023/07/29 12:40
+// Version : 1.0.1.03
+// Date : 2023/07/29 19:48
 // Author : Long17369
 function showword(who = 'main') {
 	action2.style.display = 'none'
@@ -30,14 +30,14 @@ function next(count,who,info){
 	}
 	if (info == 'reset'){
 		var SetCount = document.getElementById('Count')
-		SetCount.innerText(length(word.word) + 1)
+		SetCount.innerText = (length(word.word) + 1)
 	}
 	else{
 		var setcount = document.getElementById('count')
-		setcount.innerText(count + 1)
+		setcount.innerText = (count + 1)
 	}
 	var SetWord = document.getElementById('word')
-	SetWord.innerText(word.word[count])
+	SetWord.innerText = word.word[count]
 }
 function showWord(word, count) {
 
