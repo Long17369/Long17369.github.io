@@ -67,6 +67,6 @@ function getDate() {
 function showChinese() {
 
 }
-function showword() {
-	showWord(loadWord())
-}
+// function showword() {
+// 	showWord(loadWord())
+// }
