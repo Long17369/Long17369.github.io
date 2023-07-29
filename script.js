@@ -1,5 +1,5 @@
-// Version : 1.0.1.04
-// Date : 2023/07/29 20:09
+// Version : 1.0.1.05
+// Date : 2023/07/29 20:35
 // Author : Long17369
 var word
 var wordL = true
@@ -47,7 +47,7 @@ function sleep(who){
 	if (wordL){
 		loadWord(who)
 	}
-	while (word = undefined) {};
+	while (word == undefined) {};
 }
 function loadWord(who) {
 	if (who == 'main') {
