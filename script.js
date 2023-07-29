@@ -1,4 +1,5 @@
 function showword(who = 'main') {
+	action2.style.display = 'none'
 	wordCard.style.display = '';
 	console.log('载入单词'+who)
 	var word = loadWord(who);
