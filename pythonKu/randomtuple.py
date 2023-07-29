@@ -1,4 +1,8 @@
-"""生成随机列表"""
+"""生成随机列表
+Version : 1.0.0.0
+Date : 2023/07/29 11:14
+Author : Long17369
+"""
 from random import random
 
 

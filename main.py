@@ -1,4 +1,8 @@
-"""单词处理"""
+"""单词处理
+Version : 1.0.0.0
+Date : 2023/07/29 11:14
+Author : Long17369
+"""
 import glob
 import json #读取json
 from translation.main import translate #翻译

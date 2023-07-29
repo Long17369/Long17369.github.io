@@ -1,3 +1,6 @@
+/* Version : 1.0.1.0 */
+/* Date : 2023/07/29 11.11 */
+/* Author : Long17369 */
 .body {
 	background: white;
 	font-size: large;
@@ -73,7 +76,7 @@ li a:hover {
 	padding: 10px;
 	background-color: #fff;
 	color: #697e91;
-	max-width: 80%;
+	width: 80%;
 }
 
 .wordCard strong {

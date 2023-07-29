@@ -1,4 +1,8 @@
-'''用于请求网络'''
+'''用于请求网络
+Version : 1.0.0.0
+Date : 2023/07/29 11:14
+Author : Long17369
+'''
 import requests
 
 

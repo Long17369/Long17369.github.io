@@ -1,3 +1,6 @@
+// Version : 1.0.1.0
+// Date : 2023/07/29 11:14
+// Author : Long17369
 function showword(who = 'main') {
 	action2.style.display = 'none'
 	wordCard.style.display = '';

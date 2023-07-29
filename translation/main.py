@@ -1,4 +1,8 @@
-'''用于请求翻译'''
+'''用于请求翻译
+Version : 1.0.0.0
+Date : 2023/07/29 11:14
+Author : Long17369
+'''
 
 
 import json         # 用于读取json
