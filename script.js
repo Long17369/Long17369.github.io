@@ -1,5 +1,5 @@
-// Version : 1.0.1.20
-// Date : 2023/07/30 17:19
+// Version : 1.0.1.22
+// Date : 2023/07/30 18:30
 // Author : Long17369
 var word;
 var pos;
@@ -50,26 +50,26 @@ function next(who, info) {
 	}
 	else {
 		if (count == word.word.length) {
-			return end('who')
+			return end(who)
 		};
 	}
 	var setcount = document.getElementById('count');
 	setcount.innerText = (count + 1);
 	var SetWord = document.getElementById('Word');
 	SetWord.innerText = word.word[count];
-	show_pos()
+	show_pos(who)
 };
-function show_pos() {
-	
+function show_pos(who) {
+
 };
 function showWord(count) {
 
 };
 function sleep(who) {
-	if (word == undefined){
+	if (word == undefined) {
 		loadWord(who);
 	}
-	else if (word == null){
+	else if (word == null) {
 		loadWord(who);
 	}
 };
@@ -101,12 +101,33 @@ function loadWord(who) {
 		}
 		else {
 			console.log('main载入成功');
+			loadpos(who);
 		};
 	};
 };
-function loadpos(who){
-	
+function loadpos(who) {
+	for (info in word){
+		load_pos(who, info);
+	};
 };
+function load_pos(who, info) {
+	var open = './word/synonym/' + info + '.json';
+	var request = new XMLHttpRequest();
+	request.open('GET', open);
+	request.responseType = 'json';
+	request.send();
+	request.onload = function () {
+		pos[info] = request.response;
+		if (pos[info] == null) {
+			console.log('单词：',info,'载入失败');
+			errorcount++
+			loaderroe_pos(who, 1, info)
+		}
+		else {
+			console.log('单词：',info,'载入成功');
+		};
+	};
+}
 // function showWord(word) {
 // 	var Word = document.getElementById('word');
 // 	var Creat;
@@ -145,9 +166,28 @@ function loaderroe(who, errorcount) {
 		}
 		else {
 			console.log('main载入成功');
+			loadpos(who);
 		};
 	};
 };
+function loaderroe_pos(who, errorcount, info) {
+	var open = './word/synonym/' + info + '.json';
+	var request = new XMLHttpRequest();
+	request.open('GET', open);
+	request.responseType = 'json';
+	request.send();
+	request.onload = function () {
+		pos[info] = request.response;
+		if (pos[info] == null) {
+			console.log('单词：',info,'载入失败');
+			errorcount++
+			loaderroe_pos(who, errorcount, info)
+		}
+		else {
+			console.log('单词：',info,'载入成功');
+		};
+	};
+}
 function showChinese() {
 
 };
