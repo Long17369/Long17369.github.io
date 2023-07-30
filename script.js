@@ -36,6 +36,9 @@ function next(count, who, info) {
 		SetCount.innerText = (word.word.length + 1);
 	}
 	else {
+		if (count == word.word.length + 1){
+			return end('who')
+		}
 		var setcount = document.getElementById('count');
 		setcount.innerText = (count + 1);
 	};
@@ -127,6 +130,12 @@ function loaderroe(who,errorcount) {
 function showChinese() {
 
 };
+function end(who) {
+	posTag.style.display = 'none'
+	action.style.display = 'none'
+	var zxcvbbnmdahksj = document.getElementById('Word')
+	zxcvbbnmdahksj.innerText = '完成（后续未完工）'
+}
 // function showword() {
 // 	showWord(loadWord())
 // }
