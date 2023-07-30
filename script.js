@@ -1,5 +1,5 @@
-// Version : 1.0.1.05
-// Date : 2023/07/29 20:35
+// Version : 1.0.1.06
+// Date : 2023/07/30 12:57
 // Author : Long17369
 var word;
 var wordL = true;
