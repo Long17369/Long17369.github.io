@@ -1,4 +1,4 @@
-// Version : 1.0.1.10
+// Version : 1.0.1.10debuged
 // Date : 2023/07/30 15:19
 // Author : Long17369
 var word;
@@ -9,21 +9,21 @@ function showword(who) {
 	wordCard.style.display = '';
 	console.log('载入单词' + who);
 	sleep(who);
-	wait(Next,'reset',who);
+	wait(Next, 'reset', who);
 };
-function wait(fun,await1,await2,await3) {
-	if (word == null){
+function wait(fun, await1, await2, await3) {
+	if (word == null) {
 		setTimeout(() => {
-			wait(fun,await1,await2,await3)
+			wait(fun, await1, await2, await3)
 		}, 10);
 	}
-	else if(word == undefined){
+	else if (word == undefined) {
 		setTimeout(() => {
-			wait(fun,await1,await2,await3)
+			wait(fun, await1, await2, await3)
 		}, 10);
 	}
-	else{
-		fun(await1,await2,await3)
+	else {
+		fun(await1, await2, await3)
 	}
 }
 // function show(who) {
@@ -49,12 +49,12 @@ function next(count, who, info) {
 		SetCount.innerText = (word.word.length + 1);
 	}
 	else {
-		if (count == word.word.length){
+		if (count == word.word.length) {
 			return end('who')
-		}
-		var setcount = document.getElementById('count');
-		setcount.innerText = (count + 1);
-	};
+		};
+	}
+	var setcount = document.getElementById('count');
+	setcount.innerText = (count + 1);
 	var SetWord = document.getElementById('Word');
 	SetWord.innerText = word.word[count];
 };
@@ -90,7 +90,7 @@ function loadWord(who) {
 		word = request.response;
 		if (word == null) {
 			console.log('main载入失败');
-			loaderroe(who,1)
+			loaderroe(who, 1)
 		}
 		else {
 			console.log('main载入成功');
@@ -118,7 +118,7 @@ function getDate() {
 	var nowDate = nowMonth + '.' + strDate;
 	return nowDate;
 };
-function loaderroe(who,errorcount) {
+function loaderroe(who, errorcount) {
 	var date = new Date();
 	var strDate = date.getDate() - errorcount;
 	var nowMonth = date.getMonth() + 1;
@@ -132,7 +132,7 @@ function loaderroe(who,errorcount) {
 		if (word == null) {
 			console.log('main载入失败');
 			errorcount++
-			loaderroe(who,errorcount)
+			loaderroe(who, errorcount)
 		}
 		else {
 			console.log('main载入成功');
