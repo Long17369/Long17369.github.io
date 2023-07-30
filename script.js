@@ -33,7 +33,7 @@ function next(count, who, info) {
 	sleep(who);
 	if (info == 'reset') {
 		var SetCount = document.getElementById('Count');
-		SetCount.innerText = (length(word.word) + 1);
+		SetCount.innerText = (word.word.length + 1);
 	}
 	else {
 		var setcount = document.getElementById('count');
