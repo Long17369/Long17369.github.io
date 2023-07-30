@@ -1,5 +1,5 @@
-// Version : 1.0.1.09
-// Date : 2023/07/30 14:36
+// Version : 1.0.1.10
+// Date : 2023/07/30 15:19
 // Author : Long17369
 var word;
 var wordL = true;
@@ -9,17 +9,30 @@ function showword(who) {
 	wordCard.style.display = '';
 	console.log('载入单词' + who);
 	sleep(who);
-	setTimeout(() => {
-		show(who);
-	}, 1000);
+	wait(Next,'reset',who);
 };
-function show(who) {
-	var Word = document.getElementById('Word');
-	var Creat;
-	sleep(who);
-	var words = word.word;
-	Word.innerHTML = '';
-};
+function wait(fun,await1,await2,await3) {
+	if (word == null){
+		setTimeout(() => {
+			wait(fun,await1,await2,await3)
+		}, 10);
+	}
+	else if(word == undefined){
+		setTimeout(() => {
+			wait(fun,await1,await2,await3)
+		}, 10);
+	}
+	else{
+		fun(await1,await2,await3)
+	}
+}
+// function show(who) {
+// 	var Word = document.getElementById('Word');
+// 	var Creat;
+// 	sleep(who);
+// 	var words = word.word;
+// 	Word.innerHTML = '';
+// };
 function Next(info, who) {
 	if (info == "reset") {
 		count = 0;
@@ -36,7 +49,7 @@ function next(count, who, info) {
 		SetCount.innerText = (word.word.length + 1);
 	}
 	else {
-		if (count == word.word.length + 1){
+		if (count == word.word.length){
 			return end('who')
 		}
 		var setcount = document.getElementById('count');
@@ -131,9 +144,10 @@ function showChinese() {
 
 };
 function end(who) {
-	posTag.style.display = 'none'
+	Word.style.display = 'none'
 	action.style.display = 'none'
-	var zxcvbbnmdahksj = document.getElementById('Word')
+	pricing.style.display = 'none'
+	var zxcvbbnmdahksj = document.getElementById('posTag')
 	zxcvbbnmdahksj.innerText = '完成（后续未完工）'
 }
 // function showword() {
