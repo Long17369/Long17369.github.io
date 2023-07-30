@@ -25,7 +25,7 @@ function Next(info, who) {
 		count = 0;
 	}
 	else if (info == 'next') {
-		count ++;
+		count++;
 	};
 	next(count, who, info);
 };
@@ -66,7 +66,6 @@ function loadWord(who) {
 		console.log('载入失败');
 		return
 	};
-	wordL = false;
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
@@ -75,9 +74,11 @@ function loadWord(who) {
 		word = request.response;
 		if (word == null) {
 			console.log('main载入失败');
+			loaderroe(who,1)
 		}
 		else {
 			console.log('main载入成功');
+			wordL = false;
 		};
 	};
 };
@@ -100,6 +101,28 @@ function getDate() {
 	var nowMonth = date.getMonth() + 1;
 	var nowDate = nowMonth + '.' + strDate;
 	return nowDate;
+};
+function loaderroe(who,errorcount) {
+	var date = new Date();
+	var strDate = date.getDate() - errorcount;
+	var open = './每日单词/' + (nowMonth + '.' + strDate) + '.json';
+	var nowMonth = date.getMonth() + 1;
+	var request = new XMLHttpRequest();
+	request.open('GET', open);
+	request.responseType = 'json';
+	request.send();
+	request.onload = function () {
+		word = request.response;
+		if (word == null) {
+			console.log('main载入失败');
+			errorcount++
+			loaderroe(who,errorcount)
+		}
+		else {
+			console.log('main载入成功');
+			wordL = false;
+		};
+	};
 };
 function showChinese() {
 
