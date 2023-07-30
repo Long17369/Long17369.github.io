@@ -1,8 +1,9 @@
-// Version : 1.0.1.06
-// Date : 2023/07/30 12:57
+// Version : 1.0.1.07
+// Date : 2023/07/30 13:33
 // Author : Long17369
 var word;
 var wordL = true;
+var count = 0
 function showword(who) {
 	action2.style.display = 'none';
 	wordCard.style.display = '';
@@ -20,12 +21,11 @@ function show(who) {
 	Word.innerHTML = '';
 };
 function Next(info, who) {
-	var count;
 	if (info == "reset") {
 		count = 0;
 	}
 	else if (info == 'next') {
-		count += 1;
+		count ++;
 	};
 	next(count, who, info);
 };
