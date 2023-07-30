@@ -39,7 +39,7 @@ function next(count, who, info) {
 		var setcount = document.getElementById('count');
 		setcount.innerText = (count + 1);
 	};
-	var SetWord = document.getElementById('word');
+	var SetWord = document.getElementById('Word');
 	SetWord.innerText = word.word[count];
 };
 function showWord(count) {
