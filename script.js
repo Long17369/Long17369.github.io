@@ -3,8 +3,7 @@
 // Author : Long17369
 var word;
 var pos;
-var wordL = true;
-var count = 0
+var count = 0;
 function showword(who) {
 	action2.style.display = 'none';
 	wordCard.style.display = '';
@@ -60,14 +59,14 @@ function next(who, info) {
 	SetWord.innerText = word.word[count];
 	show_pos()
 };
+function show_pos() {
+	
+};
 function showWord(count) {
 
 };
 function sleep(who) {
-	if (wordL) {
-		loadWord(who);
-	}
-	else if (word == undefined){
+	if (word == undefined){
 		loadWord(who);
 	}
 	else if (word == null){
@@ -102,9 +101,11 @@ function loadWord(who) {
 		}
 		else {
 			console.log('main载入成功');
-			wordL = false;
 		};
 	};
+};
+function loadpos(who){
+	
 };
 // function showWord(word) {
 // 	var Word = document.getElementById('word');
@@ -144,7 +145,6 @@ function loaderroe(who, errorcount) {
 		}
 		else {
 			console.log('main载入成功');
-			wordL = false;
 		};
 	};
 };
