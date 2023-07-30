@@ -1,0 +1,51 @@
+[
+ {
+  "Chinese": "模拟",
+  "English": [
+   "simulation",
+   "simulated",
+   "analog",
+   "simulate",
+   "modeling",
+   "mock",
+   "mimic"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "仿真",
+  "English": [
+   "simulation",
+   "simulating",
+   "simulated",
+   "simulate",
+   "emulational",
+   "imitation"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "模仿",
+  "English": [
+   "imitate",
+   "imitation",
+   "mimic",
+   "mimics",
+   "emulate",
+   "modeled",
+   "mock",
+   "copycat",
+   "simulate"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

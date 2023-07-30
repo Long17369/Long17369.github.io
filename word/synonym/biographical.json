@@ -1,0 +1,57 @@
+[
+ {
+  "Chinese": "传记",
+  "English": [
+   "biography",
+   "biographical",
+   "bio",
+   "biopic"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "履历",
+  "English": [
+   "resume",
+   "CV",
+   "curriculum vitae",
+   "track record",
+   "biographical",
+   "antecedents",
+   "CVS"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "自传",
+  "English": [
+   "autobiography",
+   "autobiographical",
+   "memoir",
+   "biographical",
+   "bio"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "生平",
+  "English": [
+   "life",
+   "biography",
+   "biographical"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

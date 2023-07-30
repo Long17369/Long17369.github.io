@@ -1,0 +1,108 @@
+[
+ {
+  "Chinese": "你好",
+  "English": [
+   "Hello",
+   "Hi",
+   "Hey",
+   "Howdy",
+   "greetings"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "您好",
+  "English": [
+   "Hello",
+   "Hi",
+   "Howdy",
+   "greetings"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "哈罗",
+  "English": [
+   "Hello",
+   "harrow",
+   "aloha",
+   "Hale"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "喂",
+  "English": [
+   "Hey",
+   "feed",
+   "Hello",
+   "fed",
+   "feeding",
+   "Hi",
+   "feeds"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "哈啰",
+  "English": [
+   "Hello"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "嗨",
+  "English": [
+   "Hey",
+   "Hi",
+   "Hello"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "招呼",
+  "English": [
+   "say hello",
+   "greeted",
+   "Hello",
+   "hailed",
+   "beckoned"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "打招呼",
+  "English": [
+   "say hello",
+   "greet",
+   "greeting",
+   "Hello",
+   "salutations"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

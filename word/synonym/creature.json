@@ -1,0 +1,71 @@
+[
+ {
+  "Chinese": "生物",
+  "English": [
+   "biological",
+   "creature",
+   "biology",
+   "bio -",
+   "organisms",
+   "living",
+   "biomass",
+   "biotic"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "动物",
+  "English": [
+   "animals",
+   "creatures",
+   "creature",
+   "fauna"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "怪物",
+  "English": [
+   "monster",
+   "freak",
+   "creature",
+   "beast",
+   "ogre"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "生灵",
+  "English": [
+   "creatures",
+   "creature",
+   "beings"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "造物",
+  "English": [
+   "creation",
+   "creature",
+   "creational",
+   "demiurgic"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

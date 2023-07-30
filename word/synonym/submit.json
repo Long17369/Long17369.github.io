@@ -1,0 +1,90 @@
+[
+ {
+  "Chinese": "提交",
+  "English": [
+   "submit",
+   "submission",
+   "presented",
+   "commit",
+   "committed",
+   "filed",
+   "tabled"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "递交",
+  "English": [
+   "submit",
+   "submission",
+   "lodged",
+   "filed",
+   "handed"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "呈交",
+  "English": [
+   "submitted",
+   "submit",
+   "submission",
+   "tabled",
+   "lodged",
+   "tendered"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "报送",
+  "English": [
+   "submit"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "屈服",
+  "English": [
+   "yield",
+   "succumb",
+   "yielding",
+   "surrender",
+   "submit",
+   "bend",
+   "knees"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "服从",
+  "English": [
+   "obey",
+   "obedience",
+   "obeyed",
+   "obeying",
+   "obedient",
+   "submit",
+   "comply",
+   "obeys"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

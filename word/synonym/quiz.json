@@ -1,0 +1,101 @@
+[
+ {
+  "Chinese": "测验",
+  "English": [
+   "test",
+   "quiz",
+   "tests",
+   "exam",
+   "exams",
+   "pop quiz"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "智力竞赛",
+  "English": [
+   "quiz"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "问答游戏",
+  "English": [
+   "quiz"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "问答比赛",
+  "English": [
+   "quiz"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "小考",
+  "English": [
+   "quiz"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "问答",
+  "English": [
+   "q &",
+   "question answering",
+   "quiz",
+   "QA",
+   "interlocution",
+   "FAQs"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "提问",
+  "English": [
+   "questions",
+   "ask questions",
+   "questioning",
+   "hon",
+   "quiz",
+   "quizzing"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "试卷",
+  "English": [
+   "paper",
+   "examination papers",
+   "exam papers",
+   "exams",
+   "quiz"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]
