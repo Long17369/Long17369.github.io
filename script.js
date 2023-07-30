@@ -1,7 +1,8 @@
-// Version : 1.0.1.10debuged
-// Date : 2023/07/30 15:19
+// Version : 1.0.1.20
+// Date : 2023/07/30 17:19
 // Author : Long17369
 var word;
+var pos;
 var wordL = true;
 var count = 0
 function showword(who) {
@@ -40,9 +41,9 @@ function Next(info, who) {
 	else if (info == 'next') {
 		count++;
 	};
-	next(count, who, info);
+	next(who, info);
 };
-function next(count, who, info) {
+function next(who, info) {
 	sleep(who);
 	if (info == 'reset') {
 		var SetCount = document.getElementById('Count');
@@ -57,6 +58,7 @@ function next(count, who, info) {
 	setcount.innerText = (count + 1);
 	var SetWord = document.getElementById('Word');
 	SetWord.innerText = word.word[count];
+	show_pos()
 };
 function showWord(count) {
 
@@ -64,7 +66,13 @@ function showWord(count) {
 function sleep(who) {
 	if (wordL) {
 		loadWord(who);
-	};
+	}
+	else if (word == undefined){
+		loadWord(who);
+	}
+	else if (word == null){
+		loadWord(who);
+	}
 };
 function loadWord(who) {
 	if (who == 'main') {
