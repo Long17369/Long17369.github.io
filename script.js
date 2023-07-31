@@ -1,5 +1,5 @@
 // Version : 1.0.2.04
-// Date : 2023/07/31 20:15
+// Date : 2023/07/31 20:24
 // Author : Long17369
 var word;
 var pos = { '载入状态': false, 'pos': {} };
