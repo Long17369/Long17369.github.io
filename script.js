@@ -1,5 +1,5 @@
-// Version : 1.0.2.02debuged
-// Date : 2023/07/31 19:36
+// Version : 1.0.2.03
+// Date : 2023/07/31 20:03
 // Author : Long17369
 var word;
 var pos = { '载入状态': false, 'pos': {} };
@@ -28,13 +28,10 @@ function waitWordload(who, fun, await1, await2, await3) {
 	};
 };
 function waitPosload(who, fun, await1, await2, await3) {
-	pos.载入状态 = !pos.pos.includes(false)
-	if (word == null) {
-		setTimeout(() => {
-			waitPosload(who, fun, await1, await2, await3);
-		}, 10);
+	for (i in pos.pos){
+		pos.载入状态 = pos.载入状态 && pos.pos[i]
 	}
-	else if (word == undefined) {
+	if (word == null) {
 		setTimeout(() => {
 			waitPosload(who, fun, await1, await2, await3);
 		}, 10);
@@ -229,7 +226,7 @@ function loaderroe_pos(who, errorcount, info) {
 }
 function showChinese(who) {
 	if (!Chinese) {
-		posTag = document.getElementById('posTag')
+		var posTag = document.getElementById('posTag')
 		if (pos[word.word[count]] == []) {
 			posTag.innerText('短语暂缺翻译');
 		}
