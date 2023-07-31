@@ -1,8 +1,8 @@
-// Version : 1.0.2.01
-// Date : 2023/07/31 19:28
+// Version : 1.0.2.02
+// Date : 2023/07/31 19:33
 // Author : Long17369
 var word;
-var pos = { '载入状态': false ,'pos':{}};
+var pos = { '载入状态': false, 'pos': {} };
 var count = 0;
 var Chinese = false;
 function showword(who) {
@@ -10,33 +10,33 @@ function showword(who) {
 	wordCard.style.display = '';
 	console.log('载入单词' + who);
 	sleep(who);
-	waitWordload(Next, 'reset', who);
+	waitWordload(who, Next, 'reset', who);
 };
-function waitWordload(fun, await1, await2, await3) {
+function waitWordload(who, fun, await1, await2, await3) {
 	if (word == null) {
 		setTimeout(() => {
-			waitWordload(fun, await1, await2, await3);
+			waitWordload(who, fun, await1, await2, await3);
 		}, 10);
 	}
 	else if (word == undefined) {
 		setTimeout(() => {
-			waitWordload(fun, await1, await2, await3);
+			waitWordload(who, fun, await1, await2, await3);
 		}, 10);
 	}
 	else {
-		fun(await1, await2, await3)
+		fun(who, await1, await2, await3)
 	};
 };
-function waitPosload(fun, who, await1, await2, await3) {
+function waitPosload(who, fun, await1, await2, await3) {
 	pos.载入状态 = !pos.pos.includes(false)
 	if (word == null) {
 		setTimeout(() => {
-			waitPosload(fun, who, await1, await2, await3);
+			waitPosload(who, fun, await1, await2, await3);
 		}, 10);
 	}
 	else if (word == undefined) {
 		setTimeout(() => {
-			waitPosload(fun, who, await1, await2, await3);
+			waitPosload(who, fun, await1, await2, await3);
 		}, 10);
 	}
 	else {
@@ -74,7 +74,7 @@ function next(who, info) {
 	setcount.innerText = (count + 1);
 	var SetWord = document.getElementById('Word');
 	SetWord.innerText = word.word[count];
-	show_pos(who)
+	waitPosload(who, show_pos)
 };
 function show_pos(who) {
 	var posTag = document.getElementById('posTag');
