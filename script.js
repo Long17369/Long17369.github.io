@@ -1,5 +1,5 @@
-// Version : 1.0.2.00
-// Date : 2023/07/31 19:15
+// Version : 1.0.2.01
+// Date : 2023/07/31 19:28
 // Author : Long17369
 var word;
 var pos = { '载入状态': false ,'pos':{}};
@@ -158,7 +158,6 @@ function load_pos(who, info) {
 		pos[info] = request.response;
 		if (pos[info] == null) {
 			console.log('单词：', info, '载入失败');
-			errorcount++;
 			loaderroe_pos(who, 1, info);
 		}
 		else {
