@@ -134,8 +134,6 @@ function loadpos(who) {
 	for (info in word.word) {
 		load_pos(who, word.word[info]);
 	};
-	pos['载入状态'] = true
-	console.log('pos载入完毕')
 };
 function load_pos(who, info) {
 	var open = './word/synonym/' + info + '.json';
@@ -152,6 +150,7 @@ function load_pos(who, info) {
 		}
 		else {
 			console.log('单词：', info, '载入成功');
+			pos['载入状态'] = true
 		};
 	};
 }
@@ -212,6 +211,7 @@ function loaderroe_pos(who, errorcount, info) {
 		}
 		else {
 			console.log('单词：', info, '载入成功');
+			pos['载入状态'] = true
 		};
 	};
 }
