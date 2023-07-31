@@ -1,5 +1,5 @@
-// Version : 1.0.2.03debuged
-// Date : 2023/07/31 20:07
+// Version : 1.0.2.04
+// Date : 2023/07/31 20:15
 // Author : Long17369
 var word;
 var pos = { '载入状态': false, 'pos': {} };
@@ -71,6 +71,7 @@ function next(who, info) {
 	setcount.innerText = (count + 1);
 	var SetWord = document.getElementById('Word');
 	SetWord.innerText = word.word[count];
+	Chinese = false
 	waitPosload(who, show_pos)
 };
 function show_pos(who) {
