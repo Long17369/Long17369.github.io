@@ -1,4 +1,4 @@
-// Version : 1.0.1.24debuger
+// Version : 1.0.1.24debuged
 // Date : 2023/07/31 12:26
 // Author : Long17369
 var word;
