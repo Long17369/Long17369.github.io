@@ -134,7 +134,7 @@ function loadpos(who) {
 	for (info in word.word) {
 		load_pos(who, word.word[info]);
 	};
-	pos['载入状态'] = ture
+	pos['载入状态'] = true
 };
 function load_pos(who, info) {
 	var open = './word/synonym/' + info + '.json';
