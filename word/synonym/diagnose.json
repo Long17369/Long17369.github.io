@@ -1,0 +1,27 @@
+[
+ {
+  "Chinese": "诊断",
+  "English": [
+   "diagnosis",
+   "diagnostic",
+   "diagnose"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "确诊",
+  "English": [
+   "confirmed",
+   "diagnosed",
+   "diagnose",
+   "undiagnosed"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]
