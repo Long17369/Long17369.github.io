@@ -215,8 +215,8 @@ function loaderroe_pos(who, errorcount, info) {
 		};
 	};
 }
-function showChinese() {
-
+function showChinese(who) {
+	
 };
 function end(who) {
 	Word.style.display = 'none'
