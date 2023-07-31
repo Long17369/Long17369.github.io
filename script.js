@@ -1,5 +1,5 @@
-// Version : 1.0.1.23
-// Date : 2023/07/31 11:35
+// Version : 1.0.1.24
+// Date : 2023/07/31 11:57
 // Author : Long17369
 var word;
 var pos = {};
@@ -63,11 +63,16 @@ function show_pos(who) {
 	var posTag = document.getElementById('posTag');
 	if (word.word[count] in pos) {
 		var pos_tag = pos[word.word.count];
+		var pos__tag = [];
+		for (p in pos_tag){
+			pos__tag[p] = pos_tag[p]['词性'][1];
+		};
+		var postag = pos__tag.join('/');
 		if (pos_tag == []) {
 			posTag.innerText = '短语';
 		}
 		else {
-			posTag.innerText = pos[word.word[count]];
+			posTag.innerText = postag;
 		};
 	}
 	else {
