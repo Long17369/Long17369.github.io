@@ -109,7 +109,7 @@ function sleep(who) {
 };
 function loadWord(who) {
 	if (who == 'main') {
-		var date = getDate();
+		var date = getDate(who);
 		var open = './每日单词/' + date + '.json';
 		console.log('main载入中');
 	}
@@ -176,7 +176,7 @@ function load_pos(who, info) {
 // 		Word.append(Creat1);
 // 	};
 // };
-function getDate() {
+function getDate(who) {
 	var date = new Date();
 	var strDate = date.getDate();
 	var nowMonth = date.getMonth() + 1;
