@@ -1,5 +1,5 @@
-// Version : 1.0.1.24
-// Date : 2023/07/31 11:57
+// Version : 1.0.1.24debuger
+// Date : 2023/07/31 12:26
 // Author : Long17369
 var word;
 var pos = {};
@@ -65,7 +65,7 @@ function show_pos(who) {
 		var pos_tag = pos[word.word[count]];
 		var pos__tag = [];
 		for (p in pos_tag){
-			if (pos_tag[p]['词性'][1] in pos__tag){}
+			if (pos__tag.includes(pos_tag[p]['词性'][1])){}
 			else{
 				pos__tag.push(pos_tag[p]['词性'][1]);
 			};
