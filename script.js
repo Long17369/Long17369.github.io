@@ -51,7 +51,7 @@ function next(who, info) {
 	sleep(who);
 	if (info == 'reset') {
 		var SetCount = document.getElementById('Count');
-		SetCount.innerText = (word.word.length + 1);
+		SetCount.innerText = (word.word.length);
 	}
 	else {
 		if (count == word.word.length) {
