@@ -31,6 +31,7 @@ function wait(fun, await1, await2, await3) {
 		}, 10);
 	}
 	else {
+		console.log(pos.载入状态)
 		fun(await1, await2, await3)
 	}
 }
