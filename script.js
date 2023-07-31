@@ -1,5 +1,5 @@
-// Version : 1.0.2.02
-// Date : 2023/07/31 19:33
+// Version : 1.0.2.02debuged
+// Date : 2023/07/31 19:36
 // Author : Long17369
 var word;
 var pos = { '载入状态': false, 'pos': {} };
@@ -228,7 +228,7 @@ function loaderroe_pos(who, errorcount, info) {
 	};
 }
 function showChinese(who) {
-	if (Chinese) {
+	if (!Chinese) {
 		posTag = document.getElementById('posTag')
 		if (pos[word.word[count]] == []) {
 			posTag.innerText('短语暂缺翻译');
@@ -242,10 +242,12 @@ function showChinese(who) {
 			var Chineses = chinese.join(';')
 			posTag.innerText('中文：' + Chineses);
 		};
+		Chinese = true;
 	}
 	else {
-		show_pos(who)
-	}
+		Chinese = false;
+		show_pos(who);
+	};
 };
 
 function end(who) {
