@@ -1,8 +1,8 @@
-// Version : 1.0.1.22
-// Date : 2023/07/30 18:30
+// Version : 1.0.1.23
+// Date : 2023/07/31 11:35
 // Author : Long17369
 var word;
-var pos;
+var pos = {};
 var count = 0;
 function showword(who) {
 	action2.style.display = 'none';
@@ -60,11 +60,23 @@ function next(who, info) {
 	show_pos(who)
 };
 function show_pos(who) {
-
+	var posTag = document.getElementById('posTag');
+	if (word.word[count] in pos) {
+		var pos_tag = pos[word.word.count];
+		if (pos_tag == []) {
+			posTag.innerText = '短语';
+		}
+		else {
+			posTag.innerText = pos[word.word[count]];
+		};
+	}
+	else {
+		posTag.innerText = 'null';
+	};
 };
-function showWord(count) {
+// function showWord(count) {
 
-};
+// };
 function sleep(who) {
 	if (word == undefined) {
 		loadWord(who);
@@ -106,8 +118,8 @@ function loadWord(who) {
 	};
 };
 function loadpos(who) {
-	for (info in word){
-		load_pos(who, info);
+	for (info in word.word) {
+		load_pos(who, word.word[info]);
 	};
 };
 function load_pos(who, info) {
@@ -119,12 +131,12 @@ function load_pos(who, info) {
 	request.onload = function () {
 		pos[info] = request.response;
 		if (pos[info] == null) {
-			console.log('单词：',info,'载入失败');
+			console.log('单词：', info, '载入失败');
 			errorcount++
 			loaderroe_pos(who, 1, info)
 		}
 		else {
-			console.log('单词：',info,'载入成功');
+			console.log('单词：', info, '载入成功');
 		};
 	};
 }
@@ -179,12 +191,12 @@ function loaderroe_pos(who, errorcount, info) {
 	request.onload = function () {
 		pos[info] = request.response;
 		if (pos[info] == null) {
-			console.log('单词：',info,'载入失败');
+			console.log('单词：', info, '载入失败');
 			errorcount++
 			loaderroe_pos(who, errorcount, info)
 		}
 		else {
-			console.log('单词：',info,'载入成功');
+			console.log('单词：', info, '载入成功');
 		};
 	};
 }
