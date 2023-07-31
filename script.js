@@ -13,25 +13,21 @@ function showword(who) {
 };
 function wait(fun, await1, await2, await3) {
 	if (word == null) {
-		console.log('请稍等word')
 		setTimeout(() => {
 			wait(fun, await1, await2, await3)
 		}, 10);
 	}
 	else if (word == undefined) {
-		console.log('请稍等word')
 		setTimeout(() => {
 			wait(fun, await1, await2, await3)
 		}, 10);
 	}
 	else if (!pos.载入状态) {
-		console.log('请稍等pos')
 		setTimeout(() => {
 			wait(fun, await1, await2, await3)
 		}, 10);
 	}
 	else {
-		console.log(pos.载入状态)
 		fun(await1, await2, await3)
 	}
 }
@@ -139,6 +135,7 @@ function loadpos(who) {
 		load_pos(who, word.word[info]);
 	};
 	pos['载入状态'] = true
+	console.log('pos载入完毕')
 };
 function load_pos(who, info) {
 	var open = './word/synonym/' + info + '.json';
