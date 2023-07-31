@@ -1,36 +1,48 @@
-// Version : 1.0.1.25
-// Date : 2023/07/31 12:44
+// Version : 1.0.2.00
+// Date : 2023/07/31 19:15
 // Author : Long17369
 var word;
-var pos = {'载入状态':false};
+var pos = { '载入状态': false ,'pos':{}};
 var count = 0;
+var Chinese = false;
 function showword(who) {
 	action2.style.display = 'none';
 	wordCard.style.display = '';
 	console.log('载入单词' + who);
 	sleep(who);
-	wait(Next, 'reset', who);
+	waitWordload(Next, 'reset', who);
 };
-function wait(fun, await1, await2, await3) {
+function waitWordload(fun, await1, await2, await3) {
 	if (word == null) {
 		setTimeout(() => {
-			wait(fun, await1, await2, await3)
+			waitWordload(fun, await1, await2, await3);
 		}, 10);
 	}
 	else if (word == undefined) {
 		setTimeout(() => {
-			wait(fun, await1, await2, await3)
-		}, 10);
-	}
-	else if (!pos.载入状态) {
-		setTimeout(() => {
-			wait(fun, await1, await2, await3)
+			waitWordload(fun, await1, await2, await3);
 		}, 10);
 	}
 	else {
 		fun(await1, await2, await3)
+	};
+};
+function waitPosload(fun, who, await1, await2, await3) {
+	pos.载入状态 = !pos.pos.includes(false)
+	if (word == null) {
+		setTimeout(() => {
+			waitPosload(fun, who, await1, await2, await3);
+		}, 10);
 	}
-}
+	else if (word == undefined) {
+		setTimeout(() => {
+			waitPosload(fun, who, await1, await2, await3);
+		}, 10);
+	}
+	else {
+		fun(who, await1, await2, await3);
+	};
+};
 // function show(who) {
 // 	var Word = document.getElementById('Word');
 // 	var Creat;
@@ -69,9 +81,9 @@ function show_pos(who) {
 	if (word.word[count] in pos) {
 		var pos_tag = pos[word.word[count]];
 		var pos__tag = [];
-		for (p in pos_tag){
-			if (pos__tag.includes(pos_tag[p]['词性'][1])){}
-			else{
+		for (p in pos_tag) {
+			if (pos__tag.includes(pos_tag[p]['词性'][1])) { }
+			else {
 				pos__tag.push(pos_tag[p]['词性'][1]);
 			};
 		};
@@ -132,6 +144,7 @@ function loadWord(who) {
 };
 function loadpos(who) {
 	for (info in word.word) {
+		pos.pos[word.word[info]] = false;
 		load_pos(who, word.word[info]);
 	};
 };
@@ -145,12 +158,12 @@ function load_pos(who, info) {
 		pos[info] = request.response;
 		if (pos[info] == null) {
 			console.log('单词：', info, '载入失败');
-			errorcount++
-			loaderroe_pos(who, 1, info)
+			errorcount++;
+			loaderroe_pos(who, 1, info);
 		}
 		else {
 			console.log('单词：', info, '载入成功');
-			pos['载入状态'] = true
+			pos.pos[info] = true;
 		};
 	};
 }
@@ -216,8 +229,26 @@ function loaderroe_pos(who, errorcount, info) {
 	};
 }
 function showChinese(who) {
-	
+	if (Chinese) {
+		posTag = document.getElementById('posTag')
+		if (pos[word.word[count]] == []) {
+			posTag.innerText('短语暂缺翻译');
+		}
+		else {
+			var chineses = pos[word.word[count]]
+			var chinese = []
+			for (i in chineses) {
+				chinese[i] = chineses[i].Chinese
+			};
+			var Chineses = chinese.join(';')
+			posTag.innerText('中文：' + Chineses);
+		};
+	}
+	else {
+		show_pos(who)
+	}
 };
+
 function end(who) {
 	Word.style.display = 'none'
 	action.style.display = 'none'
