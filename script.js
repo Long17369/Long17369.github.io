@@ -13,19 +13,19 @@ function showword(who) {
 };
 function wait(fun, await1, await2, await3) {
 	if (word == null) {
-		console.log(请稍等)
+		console.log('请稍等')
 		setTimeout(() => {
 			wait(fun, await1, await2, await3)
 		}, 10);
 	}
 	else if (word == undefined) {
-		console.log(请稍等)
+		console.log('请稍等')
 		setTimeout(() => {
 			wait(fun, await1, await2, await3)
 		}, 10);
 	}
 	else if (!pos.载入状态) {
-		console.log(请稍等)
+		console.log('请稍等')
 		setTimeout(() => {
 			wait(fun, await1, await2, await3)
 		}, 10);
