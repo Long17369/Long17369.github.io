@@ -62,10 +62,13 @@ function next(who, info) {
 function show_pos(who) {
 	var posTag = document.getElementById('posTag');
 	if (word.word[count] in pos) {
-		var pos_tag = pos[word.word.count];
+		var pos_tag = pos[word.word[count]];
 		var pos__tag = [];
 		for (p in pos_tag){
-			pos__tag[p] = pos_tag[p]['词性'][1];
+			if (pos_tag[p]['词性'][1] in pos__tag){}
+			else{
+				pos__tag.push(pos_tag[p]['词性'][1]);
+			};
 		};
 		var postag = pos__tag.join('/');
 		if (pos_tag == []) {
