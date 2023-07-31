@@ -1,5 +1,5 @@
-/* Version : 1.0.1.05 */
-/* Date : 2023/07/29 20:54 */
+/* Version : 1.0.2.00 */
+/* Date : 2023/07/31 18:30 */
 /* Author : Long17369 */
 .body {
 	background: white;
@@ -115,7 +115,7 @@ li a:hover {
 
 .wordCard .Word {
 	font-weight: 600;
-	font-size: 1.5rem;
+	font-size: 0.8rem;
 	color: #425675;
 }
 
