@@ -1,8 +1,8 @@
-// Version : 1.0.2.04
-// Date : 2023/07/31 20:24
+// Version : 1.0.2.10
+// Date : 2023/07/31 20:53
 // Author : Long17369
 var word;
-var pos = { '载入状态': false, 'pos': {} };
+var pos = {};
 var count = 0;
 var Chinese = false;
 function showword(who) {
@@ -28,10 +28,7 @@ function waitWordload(who, fun, await1, await2, await3) {
 	};
 };
 function waitPosload(who, fun, await1, await2, await3) {
-	for (i in pos.pos) {
-		pos.载入状态 = pos.载入状态 && pos.pos[i]
-	}
-	if (word == null) {
+	if (!word.word[count] in pos) {
 		setTimeout(() => {
 			waitPosload(who, fun, await1, await2, await3);
 		}, 10);
@@ -95,11 +92,11 @@ function show_pos(who) {
 	}
 	else {
 		posTag.innerText = 'null';
+		// setTimeout(() => {
+		// 	show_pos(who)
+		// }, 10);
 	};
 };
-// function showWord(count) {
-
-// };
 function sleep(who) {
 	if (word == undefined) {
 		loadWord(who);
@@ -142,7 +139,7 @@ function loadWord(who) {
 };
 function loadpos(who) {
 	for (info in word.word) {
-		pos.pos[word.word[info]] = false;
+		// pos.pos[word.word[info]] = false;
 		load_pos(who, word.word[info]);
 	};
 };
@@ -160,7 +157,7 @@ function load_pos(who, info) {
 		}
 		else {
 			console.log('单词：', info, '载入成功');
-			pos.pos[info] = true;
+			// pos.pos[info] = true;
 		};
 	};
 }
