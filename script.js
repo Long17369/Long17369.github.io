@@ -1,8 +1,8 @@
-// Version : 1.0.1.24debuged
-// Date : 2023/07/31 12:26
+// Version : 1.0.1.25
+// Date : 2023/07/31 12:44
 // Author : Long17369
 var word;
-var pos = {};
+var pos = {'载入状态':false};
 var count = 0;
 function showword(who) {
 	action2.style.display = 'none';
@@ -18,6 +18,11 @@ function wait(fun, await1, await2, await3) {
 		}, 10);
 	}
 	else if (word == undefined) {
+		setTimeout(() => {
+			wait(fun, await1, await2, await3)
+		}, 10);
+	}
+	else if (!pos.载入状态) {
 		setTimeout(() => {
 			wait(fun, await1, await2, await3)
 		}, 10);
@@ -129,6 +134,7 @@ function loadpos(who) {
 	for (info in word.word) {
 		load_pos(who, word.word[info]);
 	};
+	pos['载入状态'] = ture
 };
 function load_pos(who, info) {
 	var open = './word/synonym/' + info + '.json';
