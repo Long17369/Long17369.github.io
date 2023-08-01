@@ -1,5 +1,5 @@
-// Version : 1.0.2.10
-// Date : 2023/07/31 20:53
+// Version : 1.0.2.11
+// Date : 2023/08/01 08:18
 // Author : Long17369
 var word;
 var pos = {};
@@ -182,8 +182,9 @@ function getDate(who) {
 	return nowDate;
 };
 function loaderroe(who, errorcount) {
-	var date = new Date();
-	var strDate = date.getDate() - errorcount;
+	var asfghsa = 24 * 60 * 60 * 1000 * errorcount
+	var date = new Date(new Date().getTime - asfghsa);
+	var strDate = date.getDate();
 	var nowMonth = date.getMonth() + 1;
 	var open = './每日单词/' + (nowMonth + '.' + strDate) + '.json';
 	var request = new XMLHttpRequest();
