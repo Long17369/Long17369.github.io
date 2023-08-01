@@ -1,7 +1,17 @@
 // Version : 1.0.2.13
 // Date : 2023/08/01 12:37
 // Author : Long17369
-var word;
+var word = {
+	'count':0,
+	'understand': [,],
+	'word': [,],
+	'Version': { 'time': undefined },
+	'understanded': {
+		'认识': [],
+		'不认识': [],
+		'finish': true
+	}
+};
 var pos = {};
 var count = 0;
 var Chinese = false;
@@ -9,16 +19,11 @@ function showword(who) {
 	action2.style.display = 'none';
 	wordCard.style.display = '';
 	console.log('载入单词' + who);
-	sleep(who);
+	loadWord(who);
 	waitWordload(who, Next, 'reset', who);
 };
 function waitWordload(who, fun, await1, await2, await3) {
-	if (word == null) {
-		setTimeout(() => {
-			waitWordload(who, fun, await1, await2, await3);
-		}, 10);
-	}
-	else if (word == undefined) {
+	if (word.Version.time == undefined) {
 		setTimeout(() => {
 			waitWordload(who, fun, await1, await2, await3);
 		}, 10);
@@ -51,17 +56,18 @@ function Next(who, info) {
 	else if (info == 'next') {
 		count++;
 	};
+	word.understand[count] = true
 	next(who, info);
 };
 function next(who, info) {
-	sleep(who);
+	// sleep(who);
 	if (info == 'reset') {
 		var SetCount = document.getElementById('Count');
 		SetCount.innerText = (word.word.length);
 	}
 	else {
 		if (count == word.word.length) {
-			return end(who)
+			return End(who)
 		};
 	}
 	var setcount = document.getElementById('count');
@@ -97,44 +103,46 @@ function show_pos(who) {
 		// }, 10);
 	};
 };
-function sleep(who) {
-	if (word == undefined) {
-		loadWord(who);
-	}
-	else if (word == null) {
-		loadWord(who);
-	}
-};
+// function sleep(who) {
+// 	if (word.word == []) {
+// 		loadWord(who);
+// 	}
+// };
 function loadWord(who) {
-	if (who == 'main') {
-		var date = getDate(who);
-		var open = './每日单词/' + date + '.json';
-		console.log('main载入中');
-	}
-	else if (who == 'history') {
-		return history();
-	}
-	else if (who == 'all') {
-		return all();
-	}
-	else {
-		console.log('载入失败');
-		return
+	{
+		if (who == 'main') {
+			var date = getDate(who);
+			var open = './每日单词/' + date + '.json';
+			console.log('main载入中');
+		}
+		else if (who == 'history') {
+			return history();
+		}
+		else if (who == 'all') {
+			return all();
+		}
+		else {
+			console.log('载入失败');
+			return
+		};
 	};
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
-		word = request.response;
-		if (word == null) {
+		Object.assign(word, request.response);
+		if (word.Version.time == undefined) {
 			console.log('main载入失败');
-			loaderroe(who, 1)
+			return loaderroe(who, 1)
 		}
-		else {
-			console.log('main载入成功');
-			loadpos(who);
+		else if (word.Version.time != date) {
+			console.log('载入日期不正确');
+			console.log(`实际日期：${date}`);
+			console.log(`错误日期：${word.Version.time}`);
 		};
+		console.log('main载入成功');
+		loadpos(who);
 	};
 };
 function loadpos(who) {
@@ -144,7 +152,7 @@ function loadpos(who) {
 	};
 };
 function load_pos(who, info) {
-	var open = './word/synonym/' + info + '.json';
+	var open = `./word/synonym/${info}.json`;
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
@@ -152,15 +160,15 @@ function load_pos(who, info) {
 	request.onload = function () {
 		pos[info] = request.response;
 		if (pos[info] == null) {
-			console.log('单词：', info, '载入失败');
+			console.log(`单词：${info} 载入失败`);
 			loaderroe_pos(who, 1, info);
 		}
 		else {
-			console.log('单词：', info, '载入成功');
+			console.log(`单词：${info} 载入成功`);
 			// pos.pos[info] = true;
 		};
 	};
-}
+};
 // function showWord(word) {
 // 	var Word = document.getElementById('word');
 // 	var Creat;
@@ -182,6 +190,23 @@ function getDate(who) {
 	return nowDate;
 };
 function loaderroe(who, errorcount) {
+	{
+		if (who == 'main') {
+			var date = getDate(who);
+			var open = './每日单词/' + date + '.json';
+			console.log('main载入中');
+		}
+		else if (who == 'history') {
+			return history();
+		}
+		else if (who == 'all') {
+			return all();
+		}
+		else {
+			console.log('载入失败');
+			return
+		};
+	};
 	var asfghsa = 24 * 60 * 60 * 1000 * errorcount
 	var date = new Date(new Date().getTime() - asfghsa);
 	var strDate = date.getDate();
@@ -192,7 +217,7 @@ function loaderroe(who, errorcount) {
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
-		word = request.response;
+		Object.assign(word, request.response);
 		if (word == null) {
 			console.log('main载入失败');
 			errorcount++
@@ -205,7 +230,7 @@ function loaderroe(who, errorcount) {
 	};
 };
 function loaderroe_pos(who, errorcount, info) {
-	var open = './word/synonym/' + info + '.json';
+	var open = `./word/synonym/${info}.json`;
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
@@ -213,12 +238,12 @@ function loaderroe_pos(who, errorcount, info) {
 	request.onload = function () {
 		pos[info] = request.response;
 		if (pos[info] == null) {
-			console.log('单词：', info, '载入失败');
+			console.log(`单词：${info} 载入失败`);
 			errorcount++
 			loaderroe_pos(who, errorcount, info)
 		}
 		else {
-			console.log('单词：', info, '载入成功');
+			console.log(`单词：${info} 载入成功`);
 			pos['载入状态'] = true
 		};
 	};
@@ -227,7 +252,7 @@ function showChinese(who) {
 	if (!Chinese) {
 		var posTag = document.getElementById('posTag');
 		if (pos[word.word[count]] == []) {
-			posTag.innerText('短语暂缺翻译');
+			posTag.innerText('短语暂缺翻译，请自行翻译');
 		}
 		else {
 			var chineses = pos[word.word[count]];
@@ -236,7 +261,8 @@ function showChinese(who) {
 				chinese[i] = chineses[i].Chinese;
 			};
 			var Chineses = chinese.join(';')
-			posTag.innerText = '中文：' + Chineses;
+			posTag.innerText = `中文：${Chineses}`;
+			word.understand[count] = false
 		};
 		Chinese = true;
 	}
@@ -246,12 +272,33 @@ function showChinese(who) {
 	};
 };
 function end(who) {
-	Word.style.display = 'none'
-	action.style.display = 'none'
-	pricing.style.display = 'none'
-	var zxcvbbnmdahksj = document.getElementById('posTag')
-	zxcvbbnmdahksj.innerText = '完成（后续未完工）'
+	Word.style.display = 'none';
+	action.style.display = 'none';
+	pricing.style.display = 'none';
+	var zxcvbbnmdahksj = document.getElementById('posTag');
+	zxcvbbnmdahksj.innerText = `完成\n共重复${word.count}次`
 };
+function End(who) {
+	for (i in word.understand) {
+		if (word.understand[i]) {
+			word.understanded['认识'].push(word.word[i]);
+		}
+		else {
+			word.understanded['不认识'].push(word.word[i]);
+		};
+		word.understanded.finish &&= word.understand[i];
+	};
+	word.understand = [];
+	if (word.understanded.finish) {
+		end(who);
+	}
+	else {
+		word.word = word.understanded['不认识'];
+		word.understanded = { '认识': [], '不认识': [], 'finish': true };
+		word.count++;
+		Next(who, 'reset');
+	};
+}
 // function showword() {
 // 	showWord(loadWord())
 // }
