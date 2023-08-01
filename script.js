@@ -3,8 +3,8 @@
 // Author : Long17369
 var word = {
 	'count':0,
-	'understand': [,],
-	'word': [,],
+	'understand': [],
+	'word': [],
 	'Version': { 'time': undefined },
 	'understanded': {
 		'认识': [],
