@@ -183,7 +183,7 @@ function getDate(who) {
 };
 function loaderroe(who, errorcount) {
 	var asfghsa = 24 * 60 * 60 * 1000 * errorcount
-	var date = new Date(new Date().getTime - asfghsa);
+	var date = new Date(new Date().getTime() - asfghsa);
 	var strDate = date.getDate();
 	var nowMonth = date.getMonth() + 1;
 	var open = './每日单词/' + (nowMonth + '.' + strDate) + '.json';
