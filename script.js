@@ -222,7 +222,7 @@ function loaderroe_pos(who, errorcount, info) {
 			pos['载入状态'] = true
 		};
 	};
-}
+};
 function showChinese(who) {
 	if (!Chinese) {
 		var posTag = document.getElementById('posTag');
@@ -245,14 +245,13 @@ function showChinese(who) {
 		show_pos(who);
 	};
 };
-
 function end(who) {
 	Word.style.display = 'none'
 	action.style.display = 'none'
 	pricing.style.display = 'none'
 	var zxcvbbnmdahksj = document.getElementById('posTag')
 	zxcvbbnmdahksj.innerText = '完成（后续未完工）'
-}
+};
 // function showword() {
 // 	showWord(loadWord())
 // }
