@@ -221,7 +221,7 @@ function loaderroe(who, errorcount) {
 			errorcount++;
 			return loaderroe(who, errorcount);
 		}
-		else if (word.Version.time != date) {
+		else if (word.Version.time != `${nowMonth}.${nowDate}`) {
 			console.log('载入日期不正确');
 			console.log(`实际日期：${nowMonth}.${strDate}`);
 			console.log(`错误日期：${word.Version.time}`);
