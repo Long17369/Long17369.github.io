@@ -1,5 +1,5 @@
-// Version : 1.0.2.12
-// Date : 2023/08/01 08:26
+// Version : 1.0.2.13
+// Date : 2023/08/01 12:37
 // Author : Long17369
 var word;
 var pos = {};
@@ -28,7 +28,7 @@ function waitWordload(who, fun, await1, await2, await3) {
 	};
 };
 function waitPosload(who, fun, await1, await2, await3) {
-	if (!word.word[count] in pos) {
+	if (!(word.word[count] in pos)) {
 		setTimeout(() => {
 			waitPosload(who, fun, await1, await2, await3);
 		}, 10);
