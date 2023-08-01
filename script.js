@@ -1,5 +1,5 @@
-// Version : 1.0.2.11
-// Date : 2023/08/01 08:18
+// Version : 1.0.2.12
+// Date : 2023/08/01 08:26
 // Author : Long17369
 var word;
 var pos = {};
@@ -44,7 +44,7 @@ function waitPosload(who, fun, await1, await2, await3) {
 // 	var words = word.word;
 // 	Word.innerHTML = '';
 // };
-function Next(info, who) {
+function Next(who, info) {
 	if (info == "reset") {
 		count = 0;
 	}
