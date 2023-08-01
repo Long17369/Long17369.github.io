@@ -1,5 +1,5 @@
-// Version : 1.1.0.0
-// Date : 2023/08/01 20:52
+// Version : 1.1.0.0debuged
+// Date : 2023/08/02 07:41
 // Author : Long17369
 var word = {
 	'count':0,
@@ -218,15 +218,18 @@ function loaderroe(who, errorcount) {
 	request.send();
 	request.onload = function () {
 		Object.assign(word, request.response);
-		if (word == null) {
+		if (word.Version.time == undefined) {
 			console.log('main载入失败');
-			errorcount++
-			loaderroe(who, errorcount)
+			errorcount++;
+			return loaderroe(who, errorcount);
 		}
-		else {
-			console.log('main载入成功');
-			loadpos(who);
+		else if (word.Version.time != date) {
+			console.log('载入日期不正确');
+			console.log(`实际日期：${date}`);
+			console.log(`错误日期：${word.Version.time}`);
 		};
+		console.log('main载入成功');
+		loadpos(who);
 	};
 };
 function loaderroe_pos(who, errorcount, info) {
