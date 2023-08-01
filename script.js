@@ -2,7 +2,7 @@
 // Date : 2023/08/02 07:41
 // Author : Long17369
 var word = {
-	'count':0,
+	'count': 0,
 	'understand': [],
 	'word': [],
 	'Version': { 'time': undefined },
@@ -112,7 +112,7 @@ function loadWord(who) {
 	{
 		if (who == 'main') {
 			var date = getDate(who);
-			var open = './每日单词/' + date + '.json';
+			var open = `./每日单词/${date}.json`;
 			console.log('main载入中');
 		}
 		else if (who == 'history') {
@@ -192,8 +192,11 @@ function getDate(who) {
 function loaderroe(who, errorcount) {
 	{
 		if (who == 'main') {
-			var date = getDate(who);
-			var open = './每日单词/' + date + '.json';
+			var asfghsa = 24 * 3600000 * errorcount
+			var date = new Date(new Date().getTime() - asfghsa);
+			var strDate = date.getDate();
+			var nowMonth = date.getMonth() + 1;
+			var open = `./每日单词/${nowMonth}.${strDate}.json`;
 			console.log('main载入中');
 		}
 		else if (who == 'history') {
@@ -207,11 +210,6 @@ function loaderroe(who, errorcount) {
 			return
 		};
 	};
-	var asfghsa = 24 * 60 * 60 * 1000 * errorcount
-	var date = new Date(new Date().getTime() - asfghsa);
-	var strDate = date.getDate();
-	var nowMonth = date.getMonth() + 1;
-	var open = './每日单词/' + (nowMonth + '.' + strDate) + '.json';
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
@@ -225,7 +223,7 @@ function loaderroe(who, errorcount) {
 		}
 		else if (word.Version.time != date) {
 			console.log('载入日期不正确');
-			console.log(`实际日期：${date}`);
+			console.log(`实际日期：${nowMonth}.${strDate}`);
 			console.log(`错误日期：${word.Version.time}`);
 		};
 		console.log('main载入成功');
