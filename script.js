@@ -1,5 +1,5 @@
-// Version : 1.1.0.0debuged
-// Date : 2023/08/02 07:41
+// Version : 1.1.0.10debuged
+// Date : 2023/08/02 09:08
 // Author : Long17369
 var word = {
 	'count': 0,
@@ -81,18 +81,18 @@ function show_pos(who) {
 	var posTag = document.getElementById('posTag');
 	if (word.word[count] in pos) {
 		var pos_tag = pos[word.word[count]];
-		var pos__tag = [];
-		for (p in pos_tag) {
-			if (pos__tag.includes(pos_tag[p]['词性'][1])) { }
-			else {
-				pos__tag.push(pos_tag[p]['词性'][1]);
-			};
-		};
-		var postag = pos__tag.join('/');
-		if (pos_tag == []) {
+		if (pos_tag.length == 0) {
 			posTag.innerText = '短语';
 		}
 		else {
+			var pos__tag = [];
+			for (p in pos_tag) {
+				if (pos__tag.includes(pos_tag[p]['词性'][1])) { }
+				else {
+					pos__tag.push(pos_tag[p]['词性'][1]);
+				};
+			};
+			var postag = pos__tag.join('/');
 			posTag.innerText = postag;
 		};
 	}
@@ -252,7 +252,7 @@ function loaderroe_pos(who, errorcount, info) {
 function showChinese(who) {
 	if (!Chinese) {
 		var posTag = document.getElementById('posTag');
-		if (pos[word.word[count]] == []) {
+		if (pos[word.word[count]].length == 0) {
 			posTag.innerText('短语暂缺翻译，请自行翻译');
 		}
 		else {
