@@ -46,12 +46,12 @@ def write(word, name):
         json.dump(info, f, sort_keys=True, indent=True, ensure_ascii=False)
 
 
-def split(files = ''):
+def split(files=''):
     """拆分每日单词"""
     if files == '':
         files = glob.glob('./每日单词/7.*.json')
     else:
-        files = ['./每日单词/'+ files +'.json']
+        files = ['./每日单词/' + files + '.json']
     word = set()
     for i in files:
         with open(i, 'r', encoding='utf-8') as f:
@@ -59,7 +59,7 @@ def split(files = ''):
             for i in words['word']:
                 word.add(i)
     for i in word:
-        fp = './word/all/'+i +'.json'
+        fp = './word/all/'+i + '.json'
         try:
             with open(fp, 'r', encoding='utf-8'):
                 ...
