@@ -1,0 +1,51 @@
+[
+ {
+  "Chinese": "行李",
+  "English": [
+   "luggage",
+   "baggage",
+   "bags",
+   "bag",
+   "suitcase"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "箱包",
+  "English": [
+   "bags",
+   "luggage"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "行李箱",
+  "English": [
+   "suitcase",
+   "trunk",
+   "luggage",
+   "boot",
+   "briefcase"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "行李寄存",
+  "English": [
+   "luggage"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

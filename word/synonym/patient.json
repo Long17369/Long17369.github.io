@@ -1,0 +1,78 @@
+[
+ {
+  "Chinese": "病人",
+  "English": [
+   "patients",
+   "patient",
+   "sick",
+   "patients undergoing"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "患者",
+  "English": [
+   "patients",
+   "patient",
+   "sufferers",
+   "patients undergoing"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "耐心",
+  "English": [
+   "patience",
+   "patient",
+   "patiently",
+   "waited patiently"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "病患",
+  "English": [
+   "patient"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "患",
+  "English": [
+   "patient",
+   "suffering from"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "忍耐",
+  "English": [
+   "patience",
+   "endure",
+   "patient",
+   "bear",
+   "endurance",
+   "tolerance",
+   "forbearance"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

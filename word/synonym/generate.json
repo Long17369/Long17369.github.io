@@ -1,0 +1,64 @@
+[
+ {
+  "Chinese": "生成",
+  "English": [
+   "generated",
+   "generation",
+   "generate",
+   "produce",
+   "build",
+   "create",
+   "formation",
+   "spanning"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "产生",
+  "English": [
+   "produce",
+   "generate",
+   "create",
+   "generation",
+   "production",
+   "resulting",
+   "yield"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "创造",
+  "English": [
+   "create",
+   "creation",
+   "creative",
+   "generate",
+   "invent"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "带来",
+  "English": [
+   "bring",
+   "brought",
+   "cause",
+   "lead",
+   "create",
+   "generate"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

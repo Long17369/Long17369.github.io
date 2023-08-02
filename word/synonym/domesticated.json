@@ -1,0 +1,44 @@
+[
+ {
+  "Chinese": "驯化",
+  "English": [
+   "domesticated",
+   "domestication",
+   "acclimation",
+   "acclimated",
+   "tamed",
+   "tame",
+   "taming"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "驯养",
+  "English": [
+   "domesticated",
+   "domestication",
+   "tame",
+   "tamed",
+   "taming"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "家养",
+  "English": [
+   "domestic",
+   "domesticated",
+   "domestication"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]
