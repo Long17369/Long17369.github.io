@@ -16,11 +16,13 @@ var pos = {};
 var count = 0;
 var Chinese = false;
 function showword(who) {
-	action2.style.display = 'none';
-	wordCard.style.display = '';
-	console.log('载入单词' + who);
-	loadWord(who);
-	waitWordload(who, Next, 'reset', who);
+	if (who == 'main') {
+		action2.style.display = 'none';
+		wordCard.style.display = '';
+		console.log('载入单词' + who);
+		loadWord(who);
+		waitWordload(who, Next, 'reset', who);
+	};
 };
 function waitWordload(who, fun, await1, await2, await3) {
 	if (word.Version.time == undefined) {
