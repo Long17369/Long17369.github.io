@@ -1,0 +1,61 @@
+[
+ {
+  "Chinese": "地震",
+  "English": [
+   "earthquake",
+   "seismic",
+   "quake",
+   "seismological"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "抗震",
+  "English": [
+   "seismic",
+   "earthquake",
+   "anti - seismic",
+   "aseismatic"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "震",
+  "English": [
+   "earthquake",
+   "shock",
+   "seismic",
+   "quake",
+   "tremor",
+   "Chun",
+   "startled"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "震动",
+  "English": [
+   "vibration",
+   "shock",
+   "shake",
+   "vibrate",
+   "shaking",
+   "shook",
+   "seismic",
+   "tremors"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

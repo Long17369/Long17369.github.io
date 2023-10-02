@@ -1,0 +1,54 @@
+[
+ {
+  "Chinese": "垃圾箱",
+  "English": [
+   "dustbin",
+   "trash",
+   "bin",
+   "dumpster",
+   "bins"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "垃圾桶",
+  "English": [
+   "trash",
+   "dustbin",
+   "bin",
+   "dumpster",
+   "bins"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "垃圾箱里",
+  "English": [
+   "dumpster",
+   "dustbin",
+   "trash"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "垃圾桶里",
+  "English": [
+   "trash",
+   "dumpster",
+   "dustbin"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

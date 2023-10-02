@@ -1,0 +1,74 @@
+[
+ {
+  "Chinese": "星球",
+  "English": [
+   "planet",
+   "stars",
+   "star",
+   "planetary"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "行星",
+  "English": [
+   "planet",
+   "planetary",
+   "epicyclic"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "地球",
+  "English": [
+   "earth",
+   "planet",
+   "globe"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "颗行星",
+  "English": [
+   "planet"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "颗星球",
+  "English": [
+   "planet"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "星",
+  "English": [
+   "star",
+   "stars",
+   "Xing",
+   "satellite",
+   "planet",
+   "sing"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

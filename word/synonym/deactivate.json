@@ -1,0 +1,32 @@
+[
+ {
+  "Chinese": "关闭",
+  "English": [
+   "close",
+   "off",
+   "shut down",
+   "shut",
+   "closure",
+   "turn off",
+   "shutting down",
+   "deactivate"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "失活",
+  "English": [
+   "inactivation",
+   "inactivating",
+   "deactivated",
+   "deactivate"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

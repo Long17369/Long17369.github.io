@@ -1,0 +1,73 @@
+[
+ {
+  "Chinese": "食谱",
+  "English": [
+   "recipe",
+   "recipes",
+   "diet",
+   "cookbook"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "菜谱",
+  "English": [
+   "recipe",
+   "recipes",
+   "menu",
+   "cookbook",
+   "menus"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "配方",
+  "English": [
+   "formula",
+   "recipe",
+   "prescription",
+   "recipes",
+   "formulated",
+   "ingredients",
+   "blend",
+   "dispensing"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "秘方",
+  "English": [
+   "secret",
+   "recipe",
+   "recipes"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "处方",
+  "English": [
+   "prescription",
+   "prescribed",
+   "formulation",
+   "recipe",
+   "counter",
+   "recipes"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

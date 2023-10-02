@@ -1,0 +1,44 @@
+[
+ {
+  "Chinese": "垃圾",
+  "English": [
+   "garbage",
+   "waste",
+   "junk",
+   "rubbish",
+   "trash",
+   "refuse",
+   "litter"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "倒垃圾",
+  "English": [
+   "garbage",
+   "trash"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "垃圾堆",
+  "English": [
+   "dump",
+   "garbage",
+   "landfill",
+   "trash",
+   "rubbish",
+   "dumpster"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

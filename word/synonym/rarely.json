@@ -1,0 +1,102 @@
+[
+ {
+  "Chinese": "很少",
+  "English": [
+   "rarely",
+   "few",
+   "little",
+   "seldom",
+   "less",
+   "rare",
+   "fewer"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "极少",
+  "English": [
+   "rarely",
+   "rare",
+   "seldom",
+   "minimal"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "鲜有",
+  "English": [
+   "few",
+   "rarely",
+   "seldom",
+   "scant"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "难得",
+  "English": [
+   "rare",
+   "rarely",
+   "seldom",
+   "harder"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "罕见",
+  "English": [
+   "rare",
+   "uncommon",
+   "unusual",
+   "rarely",
+   "rarity",
+   "rarer",
+   "rarely seen",
+   "infrequent"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "很少有人",
+  "English": [
+   "few",
+   "rarely"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "很难",
+  "English": [
+   "hard",
+   "difficult",
+   "hardly",
+   "difficulty",
+   "could hardly",
+   "trouble",
+   "tough",
+   "rarely"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ }
+]

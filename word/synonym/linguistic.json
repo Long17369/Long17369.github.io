@@ -1,0 +1,57 @@
+[
+ {
+  "Chinese": "语言",
+  "English": [
+   "language",
+   "linguistic",
+   "words",
+   "speech",
+   "verbal"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "语言学",
+  "English": [
+   "linguistics",
+   "linguistic",
+   "philology"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "言语",
+  "English": [
+   "speech",
+   "words",
+   "verbal",
+   "language",
+   "linguistic",
+   "utterance",
+   "spoken language"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "语境",
+  "English": [
+   "context",
+   "contextual",
+   "linguistic context",
+   "linguistic"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

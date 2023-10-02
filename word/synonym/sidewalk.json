@@ -1,0 +1,53 @@
+[
+ {
+  "Chinese": "人行道",
+  "English": [
+   "sidewalk",
+   "pavement",
+   "walkways",
+   "crosswalk",
+   "kerb",
+   "footpath"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "便道",
+  "English": [
+   "sidewalk"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "边路",
+  "English": [
+   "sidewalk",
+   "flank"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "路边",
+  "English": [
+   "roadside",
+   "curb",
+   "wayside",
+   "Bian",
+   "sidewalk",
+   "curbside"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

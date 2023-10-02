@@ -1,0 +1,88 @@
+[
+ {
+  "Chinese": "城市",
+  "English": [
+   "city",
+   "urban",
+   "cities",
+   "town",
+   "municipal"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "市区",
+  "English": [
+   "urban",
+   "downtown",
+   "city",
+   "urban areas"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "都市",
+  "English": [
+   "urban",
+   "city",
+   "metropolitan",
+   "metropolis",
+   "cities",
+   "municipal",
+   "urbanization"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "城镇",
+  "English": [
+   "town",
+   "towns",
+   "urban",
+   "Cheng",
+   "cities",
+   "urban areas"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "市政",
+  "English": [
+   "municipal",
+   "city",
+   "urban",
+   "municipal services",
+   "civic"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "城区",
+  "English": [
+   "city",
+   "urban",
+   "urban areas",
+   "Cheng",
+   "downtown"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

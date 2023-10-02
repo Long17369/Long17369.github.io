@@ -1,0 +1,70 @@
+[
+ {
+  "Chinese": "针织",
+  "English": [
+   "knitting",
+   "knitted",
+   "knit",
+   "knitwear"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "编织",
+  "English": [
+   "knitting",
+   "woven",
+   "weaving",
+   "weave",
+   "braided",
+   "knit",
+   "braid",
+   "braiding"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "织",
+  "English": [
+   "woven",
+   "weaving",
+   "knitting",
+   "weave",
+   "knit",
+   "texture",
+   "weaves",
+   "loom"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "织毛衣",
+  "English": [
+   "knit"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "针织物",
+  "English": [
+   "knitwear",
+   "knit"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

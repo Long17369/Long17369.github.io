@@ -1,0 +1,105 @@
+[
+ {
+  "Chinese": "成分",
+  "English": [
+   "components",
+   "ingredients",
+   "constituents",
+   "ingredient",
+   "elements",
+   "substances"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "成份",
+  "English": [
+   "composition",
+   "ingredients",
+   "ingredient",
+   "constituents"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "配料",
+  "English": [
+   "ingredients",
+   "batching",
+   "ingredient",
+   "burden",
+   "proportioning",
+   "blending",
+   "toppings",
+   "dosing"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "原料",
+  "English": [
+   "raw materials",
+   "material",
+   "ingredients",
+   "raw",
+   "feedstock",
+   "ingredient"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "要素",
+  "English": [
+   "elements",
+   "factors",
+   "essential factor",
+   "ingredients",
+   "ingredient"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "组成部分",
+  "English": [
+   "part",
+   "component",
+   "parts",
+   "constituent",
+   "integral part",
+   "ingredient"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "组分",
+  "English": [
+   "component",
+   "constituents",
+   "fractions",
+   "ingredients",
+   "ingredient"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

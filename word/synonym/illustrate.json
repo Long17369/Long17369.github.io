@@ -1,0 +1,78 @@
+[
+ {
+  "Chinese": "说明",
+  "English": [
+   "description",
+   "explain",
+   "illustrate",
+   "instructions",
+   "describes",
+   "shows",
+   "explanation"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "举例说明",
+  "English": [
+   "illustrate",
+   "exemplify",
+   "illustration"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "阐明",
+  "English": [
+   "clarify",
+   "illustrate",
+   "expounded",
+   "elucidate",
+   "articulate",
+   "stated"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "演示",
+  "English": [
+   "demonstrate",
+   "demonstration",
+   "demo",
+   "presentation",
+   "shows",
+   "illustrate",
+   "demos"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "阐释",
+  "English": [
+   "interpretation",
+   "explain",
+   "explanation",
+   "illustrates",
+   "interpret",
+   "illustrate",
+   "expounding",
+   "elucidation"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

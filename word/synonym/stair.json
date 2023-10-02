@@ -1,0 +1,59 @@
+[
+ {
+  "Chinese": "楼梯",
+  "English": [
+   "stairs",
+   "stair",
+   "ladder"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "台阶",
+  "English": [
+   "steps",
+   "step",
+   "stairs",
+   "bench",
+   "stepped",
+   "stair",
+   "doorstep",
+   "stile"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "阶梯",
+  "English": [
+   "ladder",
+   "stairs",
+   "stepped",
+   "stile",
+   "stair"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "座椅",
+  "English": [
+   "seat",
+   "seats",
+   "chair",
+   "seating",
+   "stair"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

@@ -1,0 +1,84 @@
+[
+ {
+  "Chinese": "逾期",
+  "English": [
+   "late",
+   "overdue",
+   "delinquent"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "过期",
+  "English": [
+   "expired",
+   "expiration",
+   "overdue",
+   "outdated",
+   "stale",
+   "prolonged",
+   "lapsed"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "超期",
+  "English": [
+   "extended",
+   "overdue",
+   "overtime"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "误点",
+  "English": [
+   "delayed",
+   "overdue"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "拖欠",
+  "English": [
+   "default",
+   "arrears",
+   "delinquency",
+   "owed",
+   "defaulting",
+   "delinquent",
+   "defaulted",
+   "overdue"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "迟到",
+  "English": [
+   "late",
+   "arrive late",
+   "lateness",
+   "tardiness",
+   "overdue"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

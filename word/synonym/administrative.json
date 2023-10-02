@@ -1,0 +1,70 @@
+[
+ {
+  "Chinese": "行政",
+  "English": [
+   "administrative",
+   "administration",
+   "executive",
+   "chief"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "行政管理",
+  "English": [
+   "administration",
+   "administrative"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "管理",
+  "English": [
+   "management",
+   "manage",
+   "administration",
+   "administrative",
+   "control",
+   "managerial",
+   "administer"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "政务",
+  "English": [
+   "chief",
+   "administrative",
+   "CS"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "执政",
+  "English": [
+   "ruling",
+   "governing",
+   "governance",
+   "administration",
+   "administrative",
+   "reign",
+   "reigning"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

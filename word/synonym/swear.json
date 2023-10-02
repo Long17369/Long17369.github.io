@@ -1,0 +1,61 @@
+[
+ {
+  "Chinese": "发誓",
+  "English": [
+   "swear",
+   "promise",
+   "swore",
+   "vowed",
+   "sworn",
+   "vow",
+   "pledge"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "赌咒",
+  "English": [
+   "swear",
+   "curse"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "起誓",
+  "English": [
+   "swear",
+   "sworn",
+   "vowed",
+   "under oath",
+   "vow",
+   "sware",
+   "oaths"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "宣誓",
+  "English": [
+   "swear",
+   "oath",
+   "sworn",
+   "pledge",
+   "oaths",
+   "swore",
+   "under oath"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

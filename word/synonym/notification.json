@@ -1,0 +1,91 @@
+[
+ {
+  "Chinese": "通知",
+  "English": [
+   "notice",
+   "inform",
+   "notify",
+   "notification",
+   "circular",
+   "advise",
+   "alert",
+   "announcement"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "通报",
+  "English": [
+   "notification",
+   "informed",
+   "bulletin",
+   "notified",
+   "communicated"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "通告",
+  "English": [
+   "notice",
+   "circular",
+   "announcement",
+   "circulars",
+   "notification",
+   "announce",
+   "advertisements",
+   "advertise"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "呈报",
+  "English": [
+   "reported",
+   "reporting",
+   "notification",
+   "notified",
+   "escalation"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "通知书",
+  "English": [
+   "notice",
+   "tickets",
+   "notification"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "告知",
+  "English": [
+   "told",
+   "inform",
+   "advise",
+   "notified",
+   "notification",
+   "informs"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

@@ -1,0 +1,49 @@
+[
+ {
+  "Chinese": "化学",
+  "English": [
+   "chemical",
+   "chemistry",
+   "electroless",
+   "chemically"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "化学反应",
+  "English": [
+   "chemical reaction",
+   "chemistry",
+   "reactions"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "化工",
+  "English": [
+   "chemical",
+   "chemistry"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "化学物质",
+  "English": [
+   "chemicals",
+   "chemistry"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

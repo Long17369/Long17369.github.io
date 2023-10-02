@@ -1,0 +1,82 @@
+[
+ {
+  "Chinese": "地区",
+  "English": [
+   "area",
+   "region",
+   "areas",
+   "regional",
+   "District",
+   "parts",
+   "territory"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "区域",
+  "English": [
+   "regional",
+   "area",
+   "region",
+   "areas",
+   "zone",
+   "District",
+   "zones"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "区",
+  "English": [
+   "District",
+   "area",
+   "region",
+   "zone",
+   "areas",
+   "Qu",
+   "zones",
+   "regional"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "地域",
+  "English": [
+   "regional",
+   "region",
+   "geographical",
+   "territorial",
+   "territory",
+   "geography",
+   "zone"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "域",
+  "English": [
+   "domain",
+   "field",
+   "area",
+   "region",
+   "realm",
+   "gamut"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

@@ -1,0 +1,80 @@
+[
+ {
+  "Chinese": "机密",
+  "English": [
+   "secrets",
+   "confidential",
+   "classified",
+   "confidentiality"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "保密",
+  "English": [
+   "secrecy",
+   "confidential",
+   "confidentiality",
+   "secret",
+   "secure",
+   "kept confidential",
+   "kept secret"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "机要",
+  "English": [
+   "confidential"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "绝密",
+  "English": [
+   "secret",
+   "confidential"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "秘密",
+  "English": [
+   "secret",
+   "secretly",
+   "mystery",
+   "covert",
+   "undercover",
+   "confidential"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ },
+ {
+  "Chinese": "保密性",
+  "English": [
+   "confidentiality",
+   "privacy",
+   "secrecy",
+   "confidential"
+  ],
+  "词性": [
+   "adj.",
+   "形容词"
+  ]
+ }
+]

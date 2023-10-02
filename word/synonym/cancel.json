@@ -1,0 +1,83 @@
+[
+ {
+  "Chinese": "取消",
+  "English": [
+   "cancel",
+   "cancellation",
+   "abolish",
+   "remove",
+   "lifted",
+   "abolition",
+   "scrapped"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "撤销",
+  "English": [
+   "revoke",
+   "withdraw",
+   "revocation",
+   "undo",
+   "repeal",
+   "cancellation",
+   "cancel",
+   "rescind"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "注销",
+  "English": [
+   "cancellation",
+   "logout",
+   "cancel",
+   "logoff",
+   "revoked",
+   "deregistration"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "抵消",
+  "English": [
+   "offset",
+   "counteract",
+   "cancellation",
+   "cancel",
+   "offsets",
+   "neutralize",
+   "counteraction"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "撤消",
+  "English": [
+   "undo",
+   "revoked",
+   "withdraw",
+   "undone",
+   "undoing",
+   "cancel",
+   "revocation",
+   "retracting"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]
