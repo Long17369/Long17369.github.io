@@ -46,19 +46,24 @@ def new_word(file,name):
                           indent=True, ensure_ascii=False)
 
 
-def allword(file):
+def allword(file , Name,trans:bool =False):
     """导入单词表"""
     with open(file, 'r', encoding='utf-8') as f:
         words = json.load(f)
         for i in words:
             Words = i['word']
-            for j in Words:
-                write(j, i['name'])
+            if trans:
+                for j in Words:
+                    write(j, i['name'],Name)
+                    translate.complex(j)
+            else:
+                for j in Words:
+                    write(j, i['name'],Name)
 
 
-def write(word, name):
+def write(word, name, Name):
     """写入单词"""
-    file = './word/all/' + word + '.json'
+    file = './word/'+Name+'/' + word + '.json'
     ttry = True
     try:
         f = open(file, 'r', encoding='utf-8')
@@ -135,7 +140,7 @@ def selection(date):
 if __name__ == '__main__':
     # day = './每日单词/'+input('请输入日期')+'.json'
     # synonym(day)
-    # allword('word.json')
+    allword('word2.json','all2',True)
     # read()
     # selection(date=input("请输入日期"))
-    new_word('words/单词2.txt','word2.json')
+    # new_word('words/单词2.txt','word2.json')
