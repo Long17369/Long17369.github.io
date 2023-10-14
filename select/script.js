@@ -1,5 +1,5 @@
-// Version : 1.1.0.10debuged
-// Date : 2023/08/02 09:08
+// Version : 1.1.1.00
+// Date : 2023/10/15 01:57
 // Author : Long17369
 var word = {
 	'count': 0,
