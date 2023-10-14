@@ -10,233 +10,33 @@ var word = {
 		'认识': [],
 		'不认识': [],
 		'finish': true
-	}
+	},
+	'Words':[]
 };
-var pos = {};
-var count = 0;
-var Chinese = false;
-function showword(who) {
-	if (who == 'main') {
-		action2.style.display = 'none';
-		wordCard.style.display = '';
-		console.log('载入单词' + who);
-		loadWord(who);
-		waitWordload(who, Next, 'reset', who);
-	};
-};
-function waitWordload(who, fun, await1, await2, await3) {
-	if (word.Version.time == undefined) {
-		setTimeout(() => {
-			waitWordload(who, fun, await1, await2, await3);
-		}, 10);
-	}
-	else {
-		fun(who, await1, await2, await3)
-	};
-};
-function waitPosload(who, fun, await1, await2, await3) {
-	if (!(word.word[count] in pos)) {
-		setTimeout(() => {
-			waitPosload(who, fun, await1, await2, await3);
-		}, 10);
-	}
-	else {
-		fun(who, await1, await2, await3);
-	};
-};
-// function show(who) {
-// 	var Word = document.getElementById('Word');
-// 	var Creat;
-// 	sleep(who);
-// 	var words = word.word;
-// 	Word.innerHTML = '';
-// };
-function Next(who, info) {
-	if (info == "reset") {
-		count = 0;
-	}
-	else if (info == 'next') {
-		count++;
-	};
-	word.understand[count] = true
-	next(who, info);
-};
-function next(who, info) {
-	// sleep(who);
-	if (info == 'reset') {
-		var SetCount = document.getElementById('Count');
-		SetCount.innerText = (word.word.length);
-	}
-	else {
-		if (count == word.word.length) {
-			return End(who)
-		};
-	}
-	var setcount = document.getElementById('count');
-	setcount.innerText = (count + 1);
-	var SetWord = document.getElementById('Word');
-	SetWord.innerText = word.word[count];
-	Chinese = false
-	waitPosload(who, show_pos)
-};
-function show_pos(who) {
-	var posTag = document.getElementById('posTag');
-	if (word.word[count] in pos) {
-		var pos_tag = pos[word.word[count]];
-		if (pos_tag.length == 0) {
-			posTag.innerText = '短语';
-		}
-		else {
-			var pos__tag = [];
-			for (p in pos_tag) {
-				if (pos__tag.includes(pos_tag[p]['词性'][1])) { }
-				else {
-					pos__tag.push(pos_tag[p]['词性'][1]);
-				};
-			};
-			var postag = pos__tag.join('/');
-			posTag.innerText = postag;
-		};
-	}
-	else {
-		posTag.innerText = 'null';
-		// setTimeout(() => {
-		// 	show_pos(who)
-		// }, 10);
-	};
-};
-// function sleep(who) {
-// 	if (word.word == []) {
-// 		loadWord(who);
-// 	}
-// };
-function loadWord(who) {
-	var open = `./word/word.json`;
-	var request = new XMLHttpRequest();
-	request.open('GET', open);
-	request.responseType = 'json';
-	request.send();
-	request.onload = function () {
-		Object.assign(word, request.response);
-		console.log('载入成功');
-		loadpos(who);
-	};
-};
-function loadpos(who) {
-	for (info in word.word) {
-		// pos.pos[word.word[info]] = false;
-		load_pos(who, word.word[info]);
-	};
-};
-function load_pos(who, info) {
-	var open = `./word/synonym/${info}.json`;
-	var request = new XMLHttpRequest();
-	request.open('GET', open);
-	request.responseType = 'json';
-	request.send();
-	request.onload = function () {
-		pos[info] = request.response;
-		if (pos[info] == null) {
-			console.log(`单词：${info} 载入失败`);
-			loaderroe_pos(who, 1, info);
-		}
-		else {
-			console.log(`单词：${info} 载入成功`);
-			// pos.pos[info] = true;
-		};
-	};
-};
-// function showWord(word) {
-// 	var Word = document.getElementById('word');
-// 	var Creat;
-// 	var words = word.word;
-// 	Word.innerHTML = '';
-// 	for (var i in words) {
-// 		Creat = document.createElement('word' + i);
-// 		Creat.append(words[i] + '\n');
-// 		var Creat1 = document.createElement('div');
-// 		Creat1.append(Creat);
-// 		Word.append(Creat1);
-// 	};
-// };
-function getDate(who) {
-	var date = new Date();
-	var strDate = date.getDate();
-	var nowMonth = date.getMonth() + 1;
-	var nowDate = nowMonth + '.' + strDate;
-	return nowDate;
-};
-function loaderroe(who, errorcount) {
-	var open = `./word/word.json`;
-	console.log('载入中');
-	var request = new XMLHttpRequest();
-	request.open('GET', open);
-	request.responseType = 'json';
-	request.send();
-	request.onload = function () {
-		Object.assign(word, request.response);
-		console.log('main载入成功');
-		loadpos(who);
-	};
-};
-function loaderroe_pos(who, errorcount, info) {
-	var open = `./word/synonym/${info}.json`;
-	var request = new XMLHttpRequest();
-	request.open('GET', open);
-	request.responseType = 'json';
-	request.send();
-	request.onload = function () {
-		pos[info] = request.response;
-		if (pos[info] == null) {
-			console.log(`单词：${info} 载入失败`);
-			errorcount++
-			loaderroe_pos(who, errorcount, info)
-		}
-		else {
-			console.log(`单词：${info} 载入成功`);
-			pos['载入状态'] = true
-		};
-	};
-};
-function showChinese(who) {
-	if (!Chinese) {
-		var posTag = document.getElementById('posTag');
-		if (pos[word.word[count]].length == 0) {
-			posTag.innerText('短语暂缺翻译，请自行翻译');
-		}
-		else {
-			var chineses = pos[word.word[count]];
-			var chinese = [];
-			for (i in chineses) {
-				chinese[i] = chineses[i].Chinese;
-			};
-			var Chineses = chinese.join(';')
-			posTag.innerText = `中文：${Chineses}`;
-			word.understand[count] = false
-		};
-		Chinese = true;
-	}
-	else {
-		Chinese = false;
-		show_pos(who);
-	};
-};
-// function showword() {
-// 	showWord(loadWord())
-// }
-function select(who) {
-    
-}
 $.ajax({
 	type:"get", //使用get方式
-	url: "./word/word.json", //json文件相对于这个HTML的路径
+	url: "../word/word.json", //json文件相对于这个HTML的路径
 	dataType:"json",
 	success:function(data) {
-		var Words = data
-		Words
+		word.Words = data
+		for (const i in word.Words){
+			for (const j in word.Words[i].word) {
+				if (word.Words[i].word[j] in word.word){}
+				else{
+					word.word.push(word.Words[i].word[j])
+				};
+			};
+		};
 		//这个data就是json数据
 	},
 	error:function() {
 		alert("请求失败");
 	}
 });
+function select() {
+	var randomNumber
+	for (let i = 0; i < 10; i++) {
+		randomNumber = Math.floor(Math.random() * word.word.length);
+		document.getElementById('word'+i).innerHTML = word.word[randomNumber];
+	}
+}

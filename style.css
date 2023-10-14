@@ -68,7 +68,22 @@ li a:hover {
 	padding: 0.7em 0.25em;
 	text-decoration: none;
 }
-
+.button_show2 {
+	position: relative;
+	/* top: 0.9rem; */
+	background-color: #6558d3;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 0.4rem;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	/* width: 100%; */
+	min-width: 4rem;
+	padding: 0.7em 0.25em;
+	text-decoration: none;
+}
 .action2 {
 	width: 50%;
 	display: flex;
@@ -185,4 +200,12 @@ li a:hover {
 }
 .about h1{
 	font-size: 0.7rem;
+}
+.show_word {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.word_show{
+	font-size: 0.465rem;
 }
