@@ -111,39 +111,14 @@ function show_pos(who) {
 // 	}
 // };
 function loadWord(who) {
-	{
-		if (who == 'main') {
-			var date = getDate(who);
-			var open = `./每日单词/${date}.json`;
-			console.log('main载入中');
-		}
-		else if (who == 'history') {
-			return history();
-		}
-		else if (who == 'all') {
-			return all();
-		}
-		else {
-			console.log('载入失败');
-			return
-		};
-	};
+	var open = `./word/word.json`;
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
 		Object.assign(word, request.response);
-		if (word.Version.time == undefined) {
-			console.log('main载入失败');
-			return loaderroe(who, 1)
-		}
-		else if (word.Version.time != date) {
-			console.log('载入日期不正确');
-			console.log(`实际日期：${date}`);
-			console.log(`错误日期：${word.Version.time}`);
-		};
-		console.log('main载入成功');
+		console.log('载入成功');
 		loadpos(who);
 	};
 };
@@ -192,42 +167,14 @@ function getDate(who) {
 	return nowDate;
 };
 function loaderroe(who, errorcount) {
-	{
-		if (who == 'main') {
-			var asfghsa = 24 * 3600000 * errorcount
-			var date = new Date(new Date().getTime() - asfghsa);
-			var strDate = date.getDate();
-			var nowMonth = date.getMonth() + 1;
-			var open = `./每日单词/${nowMonth}.${strDate}.json`;
-			console.log('main载入中');
-		}
-		else if (who == 'history') {
-			return history();
-		}
-		else if (who == 'all') {
-			return all();
-		}
-		else {
-			console.log('载入失败');
-			return
-		};
-	};
+	var open = `./word/word.json`;
+	console.log('载入中');
 	var request = new XMLHttpRequest();
 	request.open('GET', open);
 	request.responseType = 'json';
 	request.send();
 	request.onload = function () {
 		Object.assign(word, request.response);
-		if (word.Version.time == undefined) {
-			console.log('main载入失败');
-			errorcount++;
-			return loaderroe(who, errorcount);
-		}
-		else if (word.Version.time != `${nowMonth}.${nowDate}`) {
-			console.log('载入日期不正确');
-			console.log(`实际日期：${nowMonth}.${strDate}`);
-			console.log(`错误日期：${word.Version.time}`);
-		};
 		console.log('main载入成功');
 		loadpos(who);
 	};
@@ -280,3 +227,16 @@ function showChinese(who) {
 function select(who) {
     
 }
+$.ajax({
+	type:"get", //使用get方式
+	url: "./word/word.json", //json文件相对于这个HTML的路径
+	dataType:"json",
+	success:function(data) {
+		var Words = data
+		Words
+		//这个data就是json数据
+	},
+	error:function() {
+		alert("请求失败");
+	}
+});
