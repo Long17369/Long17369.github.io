@@ -274,34 +274,6 @@ function showChinese(who) {
 		show_pos(who);
 	};
 };
-function end(who) {
-	Word.style.display = 'none';
-	action.style.display = 'none';
-	pricing.style.display = 'none';
-	var zxcvbbnmdahksj = document.getElementById('posTag');
-	zxcvbbnmdahksj.innerText = `完成\n共重复${word.count}次`
-};
-function End(who) {
-	for (i in word.understand) {
-		if (word.understand[i]) {
-			word.understanded['认识'].push(word.word[i]);
-		}
-		else {
-			word.understanded['不认识'].push(word.word[i]);
-		};
-		word.understanded.finish &&= word.understand[i];
-	};
-	word.understand = [];
-	if (word.understanded.finish) {
-		end(who);
-	}
-	else {
-		word.word = word.understanded['不认识'];
-		word.understanded = { '认识': [], '不认识': [], 'finish': true };
-		word.count++;
-		Next(who, 'reset');
-	};
-}
 // function showword() {
 // 	showWord(loadWord())
 // }
