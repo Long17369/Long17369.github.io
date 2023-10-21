@@ -18,10 +18,16 @@ $.ajax({
 	url: "../word/word.json", //json文件相对于这个HTML的路径
 	dataType:"json",
 	success:function(data) {
-		word.Words = data
+		word.Words = data;
 		for (const i in word.Words){
 			for (const j in word.Words[i].word) {
-				if (word.Words[i].word[j] in word.word){}
+				const exist = false;
+				for (const k in word.word) {
+					if (word.word[k] == word.Words[i].word[j]){
+						exist = true;
+					};
+				};
+				if (exist){}
 				else{
 					word.word.push(word.Words[i].word[j])
 				};
