@@ -18,7 +18,7 @@ starvation
 defensive
 starved
 attain
-dsimiss
+dismiss
 approach
 select
 privilege
@@ -150,7 +150,7 @@ delay
 humble
 guarantee
 detective
-suppply
+supply
 recollection
 tobacco
 decline

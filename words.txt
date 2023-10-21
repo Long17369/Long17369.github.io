@@ -12,7 +12,7 @@ relay
 capture
 starved
 attain
-dsimiss
+dismiss
 approach
 select
 gain
@@ -114,7 +114,7 @@ politics
 intent
 delay
 detective
-suppply
+supply
 recollection
 tobacco
 decline
