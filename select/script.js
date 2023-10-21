@@ -49,7 +49,7 @@ function select() {
 	for (let i = 0; i < 10; i++) {
 		while (!word.Next) {
 			word.randomNumber[i] = Math.floor(Math.random() * word.word.length);
-			console.log(word.randomNumber)
+			// console.log(word.randomNumber)
 			for (const j in word.randomNumber) {
 				if (i !== j) {
 					word.next[j] = false;
