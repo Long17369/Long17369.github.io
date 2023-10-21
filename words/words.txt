@@ -106,7 +106,7 @@ initial
 encounter
 remains
 prey
-swalow
+swallow
 blend
 personal
 hint
@@ -285,7 +285,7 @@ suspend
 carpet
 apparently
 engage
-mindest
+mindset
 distinct
 classical
 fragile
