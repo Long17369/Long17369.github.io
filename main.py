@@ -23,24 +23,27 @@ def new_word(file,name):
     with open(file, 'r', encoding='utf-8') as f:
         words = f.read().split('\n')
     for i in words:
-        duanyu = False
-        wordi = {'name':'','word':[]}
-        Temp = i.split('(')
-        Temp[0]=')'+Temp[0]
-        Word = []
-        for j in Temp:
-            Temp2 = j.split(')')
-            Word.append(Temp2[0])
-            try:
-                Word.extend(Temp2[1].split())
-            except IndexError:
-                ...
-        while '' in Word:
-            Word.remove('')
-        wordi['name']=Word[-1]
-        del Word[-1]
-        wordi['word'] = Word
-        word.append(wordi)
+        if i == []:
+            pass
+        else:
+            duanyu = False
+            wordi = {'name':'','word':[]}
+            Temp = i.split('(')
+            Temp[0]=')'+Temp[0]
+            Word = []
+            for j in Temp:
+                Temp2 = j.split(')')
+                Word.append(Temp2[0])
+                try:
+                    Word.extend(Temp2[1].split())
+                except IndexError:
+                    ...
+            while '' in Word:
+                Word.remove('')
+            wordi['name']=Word[-1]
+            del Word[-1]
+            wordi['word'] = Word
+            word.append(wordi)
     with open(name, 'w', encoding='utf-8') as f:
         json.dump(word, f, sort_keys=True,
                           indent=True, ensure_ascii=False)
@@ -140,7 +143,7 @@ def selection(date):
 if __name__ == '__main__':
     # day = './每日单词/'+input('请输入日期')+'.json'
     # synonym(day)
-    allword('word2.json','all2',True)
+    # allword('word2.json','all2',True)
     # read()
     # selection(date=input("请输入日期"))
-    # new_word('words/单词2.txt','word2.json')
+    new_word('words/word2.txt','word3.json')
