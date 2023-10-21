@@ -1,5 +1,5 @@
-// Version : 1.1.1.00
-// Date : 2023/10/15 01:57
+// Version : 1.1.1.01
+// Date : 2023/10/21 20:57
 // Author : Long17369
 var word = {
 	'count': 0,
@@ -21,10 +21,12 @@ $.ajax({
 		word.Words = data;
 		for (const i in word.Words){
 			for (const j in word.Words[i].word) {
-				const exist = false;
+				var exist = false;
 				for (const k in word.word) {
 					if (word.word[k] == word.Words[i].word[j]){
 						exist = true;
+						// console.log(word.word[k]);
+						// console.log(word.Words[i].word[j]);
 					};
 				};
 				if (exist){}
