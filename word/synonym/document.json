@@ -1,0 +1,134 @@
+[
+ {
+  "Chinese": "文档",
+  "English": [
+   "document",
+   "file",
+   "doc",
+   "docs"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "文件",
+  "English": [
+   "file",
+   "documents",
+   "document",
+   "papers"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "文献",
+  "English": [
+   "literature",
+   "document",
+   "papers",
+   "bibliographic"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "单据",
+  "English": [
+   "documents",
+   "document",
+   "receipts",
+   "invoices",
+   "voucher",
+   "docs",
+   "chits"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "公文",
+  "English": [
+   "document",
+   "official documents",
+   "archives",
+   "Kumon"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "证件",
+  "English": [
+   "documents",
+   "certificates",
+   "document",
+   "papers",
+   "ID",
+   "credentials",
+   "badge",
+   "ids"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "文书",
+  "English": [
+   "instrument",
+   "documents",
+   "document",
+   "clerical",
+   "paperwork",
+   "clerk"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "档",
+  "English": [
+   "file",
+   "document",
+   "stalls",
+   "gear",
+   "archives",
+   "outlets",
+   "gears"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "记录",
+  "English": [
+   "record",
+   "recorded",
+   "document",
+   "log",
+   "logging",
+   "notes",
+   "logs"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

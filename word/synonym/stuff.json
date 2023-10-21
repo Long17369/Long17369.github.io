@@ -1,0 +1,100 @@
+[
+ {
+  "Chinese": "东西",
+  "English": [
+   "things",
+   "something",
+   "stuff",
+   "what",
+   "anything"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "玩意",
+  "English": [
+   "thing",
+   "stuff",
+   "gadget"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "玩意儿",
+  "English": [
+   "thing",
+   "stuff",
+   "gadgets",
+   "contraption"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "事情",
+  "English": [
+   "things",
+   "something",
+   "matter",
+   "affair",
+   "anything",
+   "events",
+   "stuff"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "事",
+  "English": [
+   "things",
+   "about",
+   "matter",
+   "something",
+   "business",
+   "happened",
+   "stuff"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "物品",
+  "English": [
+   "items",
+   "goods",
+   "articles",
+   "objects",
+   "stuff",
+   "belongings",
+   "listings"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "材料",
+  "English": [
+   "materials",
+   "stuff"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

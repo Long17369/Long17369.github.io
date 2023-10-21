@@ -1,0 +1,58 @@
+[
+ {
+  "Chinese": "退休",
+  "English": [
+   "retired",
+   "retirement",
+   "retire",
+   "pension"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "退役",
+  "English": [
+   "retired",
+   "retirement",
+   "decommissioning",
+   "retire",
+   "discharged"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "隐退",
+  "English": [
+   "retired",
+   "retire",
+   "retreat"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "退",
+  "English": [
+   "back",
+   "retreat",
+   "annealing",
+   "retired",
+   "retreated",
+   "refund",
+   "withdrew",
+   "retire"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

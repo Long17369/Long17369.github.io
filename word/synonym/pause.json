@@ -1,0 +1,80 @@
+[
+ {
+  "Chinese": "停顿",
+  "English": [
+   "pause",
+   "paused",
+   "standstill",
+   "halt",
+   "stalled",
+   "pausing",
+   "stoppage"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "暂停",
+  "English": [
+   "suspended",
+   "pause",
+   "suspension",
+   "paused",
+   "pausing",
+   "moratorium",
+   "temporarily suspend"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "停下来",
+  "English": [
+   "stop",
+   "stopped",
+   "stops",
+   "pause",
+   "paused"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "迟疑",
+  "English": [
+   "hesitate",
+   "hesitation",
+   "pause",
+   "hesitant",
+   "indecision"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "停留",
+  "English": [
+   "stay",
+   "remain",
+   "stays",
+   "stuck",
+   "staying",
+   "stayed",
+   "residence",
+   "dwell",
+   "pause"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

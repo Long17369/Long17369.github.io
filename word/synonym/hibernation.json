@@ -1,0 +1,40 @@
+[
+ {
+  "Chinese": "冬眠",
+  "English": [
+   "hibernating",
+   "hibernation",
+   "dormant"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "休眠",
+  "English": [
+   "dormancy",
+   "dormant",
+   "sleeping",
+   "hibernate",
+   "hibernation",
+   "resting"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "休眠状态",
+  "English": [
+   "dormant",
+   "hibernation"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ }
+]

@@ -143,7 +143,7 @@ def selection(date):
 if __name__ == '__main__':
     # day = './每日单词/'+input('请输入日期')+'.json'
     # synonym(day)
-    # allword('word2.json','all2',True)
+    allword('word3.json','all',True)
     # read()
     # selection(date=input("请输入日期"))
-    new_word('words/word2.txt','word3.json')
+    # new_word('words/word2.txt','word3.json')

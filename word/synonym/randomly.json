@@ -1,0 +1,49 @@
+[
+ {
+  "Chinese": "随机",
+  "English": [
+   "random",
+   "stochastic",
+   "randomly",
+   "randomized",
+   "randomization"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "随意",
+  "English": [
+   "random",
+   "casual",
+   "arbitrary",
+   "freely",
+   "arbitrarily",
+   "optional",
+   "randomly"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ },
+ {
+  "Chinese": "乱",
+  "English": [
+   "mess",
+   "chaos",
+   "disorderly",
+   "messy",
+   "chaotic",
+   "disorder",
+   "messed",
+   "randomly"
+  ],
+  "词性": [
+   "adv.",
+   "副词"
+  ]
+ }
+]

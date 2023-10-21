@@ -1,0 +1,97 @@
+[
+ {
+  "Chinese": "中断",
+  "English": [
+   "interrupt",
+   "interrupted",
+   "break",
+   "disruption",
+   "disrupted",
+   "outage",
+   "interrupting"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "打断",
+  "English": [
+   "interrupted",
+   "interrupt",
+   "break",
+   "interruption",
+   "disrupted"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "打扰",
+  "English": [
+   "disturb",
+   "bother",
+   "Excuse me",
+   "interrupt",
+   "trouble",
+   "interruption",
+   "intrude"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "插嘴",
+  "English": [
+   "interrupt"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "打岔",
+  "English": [
+   "interrupt"
+  ],
+  "词性": [
+   "n.",
+   "名词"
+  ]
+ },
+ {
+  "Chinese": "打搅",
+  "English": [
+   "disturb",
+   "Excuse me",
+   "bother",
+   "interrupt"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "阻断",
+  "English": [
+   "blocking",
+   "occlusion",
+   "blockade",
+   "interrupt",
+   "interrupted",
+   "interruption",
+   "denial"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]

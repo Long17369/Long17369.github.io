@@ -1,0 +1,82 @@
+[
+ {
+  "Chinese": "评估",
+  "English": [
+   "evaluation",
+   "assessment",
+   "evaluate",
+   "assess",
+   "appraisal",
+   "estimation",
+   "estimating"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "评价",
+  "English": [
+   "evaluation",
+   "assessment",
+   "evaluate",
+   "appraisal",
+   "assess",
+   "appraise",
+   "estimation"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "评定",
+  "English": [
+   "evaluation",
+   "assessment",
+   "assess",
+   "evaluating",
+   "rating",
+   "estimation",
+   "qualification"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "考核",
+  "English": [
+   "assessment",
+   "evaluation",
+   "examination",
+   "appraisal",
+   "assess",
+   "examine",
+   "checking"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ },
+ {
+  "Chinese": "衡量",
+  "English": [
+   "measure",
+   "weigh",
+   "measurement",
+   "gauge",
+   "evaluate",
+   "assess",
+   "measurable"
+  ],
+  "词性": [
+   "v.",
+   "动词"
+  ]
+ }
+]
