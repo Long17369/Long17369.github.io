@@ -1,0 +1,45 @@
+{
+ "correctorformdata": {
+  "fromLang": "en"
+ },
+ "formdata": {
+  "fromLang": "en",
+  "to": "zh-Hans",
+  "tryFetchingGenderDebiasedTranslations": "ture"
+ },
+ "formdata_1": {
+  "from": "en",
+  "to": "zh-Hans"
+ },
+ "header": {
+  "content-type": "application/x-www-form-urlencoded",
+  "origin": "https://cn.bing.com",
+  "sec-ch-ua": "'Not_A Brand';v='99', 'Microsoft Edge';v='109', 'Chromium';v='109'",
+  "sec-ch-ua-arch": "x86",
+  "sec-ch-ua-bitness": "64",
+  "sec-ch-ua-full-version": "109.0.1518.115",
+  "sec-ch-ua-full-version-list": "Not_A Brand;v=99.0.0.0,Microsoft Edge;v=109.0.1518.115,Chromium;v=109.0.5414.149",
+  "sec-ch-ua-platform": "Windows",
+  "sec-ch-ua-platform-version": "0.1.0",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-origin",
+  "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.115"
+ },
+ "key": {
+  "key": "1700884314864",
+  "token": "mwhFkGHE0MJRAK_SSrd8-a8KtgzM3Eea"
+ },
+ "sign": {
+  "get_key_and_token": [
+   "var",
+   "params_AbusePreventionHelper",
+   "="
+  ],
+  "translate_c": "{'statusCode': 205, 'errorMessage': ''}",
+  "translate_s": "{'statusCode': 205, 'errorMessage': ''}"
+ },
+ "urlcomplex": "https://cn.bing.com/tlookupv3?isVertical=1&&IG=0F4991243E674EF6867B5A24A7ECECE0&IID=translator.5023.7",
+ "urlcorrector": "https://cn.bing.com/tspellcheckv3?isVertical=1&&IG=C2C92D2012E64C9AA81678660EDF41E0&IID=translator.5023.16",
+ "urlsimple": "http://cn.bing.com/ttranslatev3?isVertical=1&&IG=490F51189ACC412AA634A766F1FDE7D5&IID=translator.5026"
+}

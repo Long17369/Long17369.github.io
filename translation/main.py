@@ -7,6 +7,7 @@ Author : Long17369
 
 import json         # 用于读取json
 import requests     # 用于请求网络
+from setting.main import setting,keyToken
 
 
 class Translate():
@@ -20,8 +21,8 @@ class Translate():
         """简单翻译"""
 
         def __init__(self) -> None:
-            self.setting = setting.get('key')
-            self.formdata = setting.get('formdata')
+            # self.setting : dict = setting.get('key')
+            self.formdata : dict = setting.get('formdata')
             self.error = setting.get('sign')["translate_s"]
             self.url = setting.get('urlsimple')
             self.header = setting.get('header')
@@ -38,24 +39,28 @@ class Translate():
             post = requests.post(self.url, data=self.formdata,
                                  headers=self.header, timeout=10)
             word = post.json()
+            text = None
             if str(word) == str(self.error):
                 print('key, token已失效')
                 keyToken()
-                word = self.reload(self.simple)(info)
-                input()
-            return self.end(word)
+                text = self.reload(self.simple)(info)
+                # input()
+            return self.end(word,text)
 
-        def end(self, word):
+        def end(self, word,text):
             """结束"""
-            text = word[0]["translations"][0]["text"]
+            if text == None:
+                # print(word)
+                # print(type(word))
+                text = word[0]["translations"][0]["text"]
             return text
 
     class Complex():
         """复杂翻译(近义词)"""
 
         def __init__(self) -> None:
-            self.setting = setting.get('key')
-            self.formdata = setting.get('formdata_1')
+            # self.setting = setting.get('key')
+            self.formdata :dict = setting.get('formdata_1')
             self.error = setting.get('sign')["translate_c"]
             self.url = setting.get('urlcomplex')
             self.header = setting.get('header')
@@ -96,6 +101,7 @@ class Translate():
             with open(file, 'w', encoding='utf-8') as f:
                 json.dump(dict_complex, f, sort_keys=True,
                           indent=True, ensure_ascii=False)
+            return word
 
     def fun_1(self):
         """凑数用的"""
@@ -105,59 +111,6 @@ class Translate():
         """凑数用的"""
         return None
 
-
-def get_key_and_token():
-    """用于得到key和token"""
-    url = 'https://cn.bing.com/translator'
-    sign = ('var', 'params_AbusePreventionHelper', '=',)
-    html1 = requests.get(url, timeout=10).text
-    text1 = html1.split(';')
-    length = len(text1)
-    for i in range(length):
-        text2 = text1[i].split()
-        if len(text2) == 4:
-            Yesnot = [text2[i] == sign[i] for i in range(3)]
-            yesnot = Yesnot[0] and Yesnot[1] and Yesnot[2]
-            if yesnot:
-                text3 = text2[3][1:-1].split(',')
-                break
-    key = {"key": text3[0], "token": text3[1][1:-1]}
-    setting.set("key", key)
-
-
-keyToken = get_key_and_token
-
-
-class Setting():
-    """用于读写设置"""
-
-    def __init__(self) -> None:
-        self.set = self.setSetting
-        self.get = self.getSetting
-
-    def getSetting(self, settingB: str = 'setting'):
-        """用于读取设置"""
-        with open('./translation/setting.json', 'r', encoding='utf-8') as f:
-            settings = json.load(f)
-        if settingB in settings:
-            return settings[settingB]
-        if settingB == 'setting':
-            return settings
-        print('Setting Not Found')
-        return None
-
-    def setSetting(self, settingB=None, settingC=None):
-        """用于写入设置"""
-        if settingB is None or settingC is None:
-            return None
-        settings = self.getSetting()
-        settings[settingB] = settingC
-        with open('./translation/setting.json', 'w', encoding='utf-8') as f:
-            json.dump(settings, f, sort_keys=True,
-                      indent=True, ensure_ascii=False)
-
-
-setting = Setting()
 translate = Translate()
 
 
