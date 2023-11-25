@@ -111,7 +111,7 @@ blend
 personal
 hint
 dorbid
-collaspe
+collapse
 mercy
 calculated
 at the mercy of
@@ -140,7 +140,7 @@ valuable
 pipe
 logically
 sour
-protrait
+portrait
 annual
 dip
 politics

@@ -6,6 +6,8 @@ Author : Long17369
 import glob
 import json  # 读取json
 from translation.main import translate  # 翻译
+from corrector.main import cor
+from setting.main import keyToken
 from pythonKu.randomtuple import randoms
 from pythonKu.sort import bubble as sort
 
@@ -147,5 +149,6 @@ if __name__ == '__main__':
     # read()
     # selection(date=input("请输入日期"))
     # new_word('words/word2.txt','word3.json')
-    print(translate.complex('hi'))
+    # print(translate.complex('hi'))
+    print(cor('word'))
     ...
