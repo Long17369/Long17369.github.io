@@ -15,6 +15,7 @@ var word = {
 var pos = {};
 var count = 0;
 var Chinese = false;
+newGetDate()
 function showword(who) {
 	if (who == 'main') {
 		action2.style.display = 'none';
@@ -113,8 +114,9 @@ function show_pos(who) {
 function loadWord(who) {
 	{
 		if (who == 'main') {
-			var date = getDate(who);
-			var open = `./每日单词/${date}.json`;
+			// var date = getDate(who);
+			var date = word.date[word.date.length-1]
+			var open = `./每日单词/${date}`;
 			console.log('main载入中');
 		}
 		else if (who == 'history') {
@@ -136,7 +138,7 @@ function loadWord(who) {
 		Object.assign(word, request.response);
 		if (word.Version.time == undefined) {
 			console.log('main载入失败');
-			return loaderroe(who, 1)
+			// return loaderroe(who, 1)
 		}
 		else if (word.Version.time != date) {
 			console.log('载入日期不正确');
@@ -305,3 +307,15 @@ function End(who) {
 // function showword() {
 // 	showWord(loadWord())
 // }
+function newGetDate(who) {
+	var request = new XMLHttpRequest();
+	request.open('GET', './每日单词/dir.json');
+	request.responseType = 'json';
+	request.send();
+	request.onload = function () {
+		date = request.response
+		Object.assign(word, {date,});
+		console.log('日期载入成功');
+		loadpos(who);
+	};
+}
