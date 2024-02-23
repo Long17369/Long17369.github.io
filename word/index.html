@@ -8,12 +8,13 @@
 	<meta charset="utf-8">
 	<title>所有单词</title>
 	<link rel="stylesheet" type="text/css" href="../style.css">
-	<script type="text/javascript" src="../script.js"></script>
 	<script type="text/javascript">
 		var html = document.querySelector('html');
 		var rem = html.offsetWidth / 6.4;
 		html.style.fontSize = rem + "px";
+		var who = 'all'
 	</script>
+	<script type="text/javascript" src="../script.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
 	<!-- <h1>暑假英语单词背诵</h1> -->
 	<div class="main">
 		<div class='action2' id="action2">
-			<a onclick="showword('all')" class='button_show'>
+			<a onclick="showword()" class='button_show'>
 				开始随机20个单词吧！
 			</a>
 		</div>
@@ -47,10 +48,10 @@
 				<p class="Word" id="Word">请稍等</p>
 				<p class="posTag" id="posTag">posTag</p>
 				<div class="action" id="action">
-					<a onclick="Next('all','next')" class="button1">
+					<a onclick="Next('next')" class="button1">
 						我认识
 					</a>
-					<a onclick="showChinese('all')" class="button2">
+					<a onclick="showChinese()" class="button2">
 						我不认识
 					</a>
 				</div>

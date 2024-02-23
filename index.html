@@ -8,12 +8,13 @@
 	<meta charset="utf-8">
 	<title>暑假英语单词背诵</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<script type="text/javascript" src="./script.js"></script>
 	<script type="text/javascript">
 		var html = document.querySelector('html');
 		var rem = html.offsetWidth / 6.4;
 		html.style.fontSize = rem + "px";
+		var who = 'main'
 	</script>
+	<script type="text/javascript" src="./script.js"></script>
 </head>
 
 <body>
@@ -49,10 +50,10 @@
 				<p class="Word" id="Word">请稍等</p>
 				<p class="posTag" id="posTag">posTag</p>
 				<div class="action" id="action">
-					<a onclick="Next('main','next')" class="button1">
+					<a href="javascript:Next('main','next')" class="button1">
 						我认识
 					</a>
-					<a onclick="showChinese('main')" class="button2">
+					<a href="javascript:showChinese('main')" class="button2">
 						我不认识
 					</a>
 				</div>

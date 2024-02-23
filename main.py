@@ -150,5 +150,6 @@ if __name__ == '__main__':
     # selection(date=input("请输入日期"))
     # new_word('words/word2.txt','word3.json')
     # print(translate.complex('hi'))
-    print(cor('word'))
+    # print(cor('word'))
+    translate.complex(input())
     ...
