@@ -1,4 +1,4 @@
-"""单词处理
+"""主文件
 Version : 1.0.0.0
 Date : 2023/07/29 11:14
 Author : Long17369
@@ -20,7 +20,7 @@ def synonym(file):
             translate.complex(i)
 
 
-def new_word(file,name):
+def new_word(file, name):
     word = []
     with open(file, 'r', encoding='utf-8') as f:
         words = f.read().split('\n')
@@ -29,9 +29,9 @@ def new_word(file,name):
             pass
         else:
             duanyu = False
-            wordi = {'name':'','word':[]}
+            wordi = {'name': '', 'word': []}
             Temp = i.split('(')
-            Temp[0]=')'+Temp[0]
+            Temp[0] = ')'+Temp[0]
             Word = []
             for j in Temp:
                 Temp2 = j.split(')')
@@ -42,16 +42,16 @@ def new_word(file,name):
                     ...
             while '' in Word:
                 Word.remove('')
-            wordi['name']=Word[-1]
+            wordi['name'] = Word[-1]
             del Word[-1]
             wordi['word'] = Word
             word.append(wordi)
     with open(name, 'w', encoding='utf-8') as f:
         json.dump(word, f, sort_keys=True,
-                          indent=True, ensure_ascii=False)
+                  indent=True, ensure_ascii=False)
 
 
-def allword(file , Name,trans:bool =False):
+def allword(file, Name, trans: bool = False):
     """导入单词表"""
     with open(file, 'r', encoding='utf-8') as f:
         words = json.load(f)
@@ -59,11 +59,11 @@ def allword(file , Name,trans:bool =False):
             Words = i['word']
             if trans:
                 for j in Words:
-                    write(j, i['name'],Name)
+                    write(j, i['name'], Name)
                     translate.complex(j)
             else:
                 for j in Words:
-                    write(j, i['name'],Name)
+                    write(j, i['name'], Name)
 
 
 def write(word, name, Name):
@@ -150,5 +150,6 @@ if __name__ == '__main__':
     # selection(date=input("请输入日期"))
     # new_word('words/word2.txt','word3.json')
     # print(translate.complex('hi'))
-    print(cor('word'))
+    # print(cor('word'))
+    # translate.complex(input())
     ...
