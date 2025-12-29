@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!-- Version : 1.5.0.00 -->
+<!-- Date : 2023/10/15 01:57 -->
+<!-- Author : Long17369 -->
+
+<head>
+	<meta charset="utf-8">
+	<title>单词背诵</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+	<script type="text/javascript">
+		var html = document.querySelector('html');
+		var rem = html.offsetWidth / 6.4;
+		html.style.fontSize = rem + "px";
+	</script>
+</head>
+
+<body>
+	<div class="main">
+		<div class="action2">
+			<button onclick="select()" class="button_show2">抽取单词</button>
+		</div>
+	</div>
+	<!-- <button onclick="showChinese()">显示中文</button> -->
+	<div class="show_word">
+		<a id="word0" class="word_show"></a>
+		<a id="word1" class="word_show"></a>
+		<a id="word2" class="word_show"></a>
+		<a id="word3" class="word_show"></a>
+		<a id="word4" class="word_show"></a>
+		<a id="word5" class="word_show"></a>
+		<a id="word6" class="word_show"></a>
+		<a id="word7" class="word_show"></a>
+		<a id="word8" class="word_show"></a>
+		<a id="word9" class="word_show"></a>
+	</div>
+</body>
+
+</html>

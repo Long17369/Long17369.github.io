@@ -82,6 +82,7 @@ li a:hover {
 	/* width: 100%; */
 	min-width: 4rem;
 	padding: 0.7em 0.25em;
+    margin-bottom: 1rem;
 	text-decoration: none;
 }
 .action2 {
